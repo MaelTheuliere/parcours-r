@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html >
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Chapitre 3 L’ACP | Analyse des données multi-dimensionnelles</title>
-  <meta name="description" content="Parcours de formation R - module 4">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapitre 4 L’ACP | Analyse des données multi-dimensionnelles</title>
+  <meta name="description" content="Parcours de formation R - module 4" />
+  <meta name="generator" content="bookdown 0.10 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapitre 3 L’ACP | Analyse des données multi-dimensionnelles" />
+  <meta property="og:title" content="Chapitre 4 L’ACP | Analyse des données multi-dimensionnelles" />
   <meta property="og:type" content="book" />
   
   
@@ -17,21 +16,21 @@
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapitre 3 L’ACP | Analyse des données multi-dimensionnelles" />
+  <meta name="twitter:title" content="Chapitre 4 L’ACP | Analyse des données multi-dimensionnelles" />
   
   <meta name="twitter:description" content="Parcours de formation R - module 4" />
   
 
-<meta name="author" content="Groupe des référents R">
+<meta name="author" content="Vivien Roussez &amp; Pascal Irz" />
 
 
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="intro.html">
+<link rel="prev" href="bien-commencer.html">
 <link rel="next" href="lafc.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -108,7 +107,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Exploration avancée des données</a></li>
+<li><p style="text-align:center;"><img src="https://www.alerte-sante-environnement-deontologie.fr/IMG/siteon0.svg?1550857332" style="width:150px;"/></p></li><li><a href="./">Exploration avancée des données</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
@@ -129,54 +128,61 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul></li>
 <li class="chapter" data-level="2.8" data-path="intro.html"><a href="intro.html#le-package-factominer"><i class="fa fa-check"></i><b>2.8</b> Le package FactoMineR</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="lacp.html"><a href="lacp.html"><i class="fa fa-check"></i><b>3</b> L’ACP</a><ul>
-<li class="chapter" data-level="3.1" data-path="lacp.html"><a href="lacp.html#principe-de-lacp"><i class="fa fa-check"></i><b>3.1</b> Principe de l’ACP</a><ul>
-<li class="chapter" data-level="3.1.1" data-path="lacp.html"><a href="lacp.html#type-de-donnees"><i class="fa fa-check"></i><b>3.1.1</b> Type de données</a></li>
-<li class="chapter" data-level="3.1.2" data-path="lacp.html"><a href="lacp.html#objectifs-1"><i class="fa fa-check"></i><b>3.1.2</b> Objectifs</a></li>
-<li class="chapter" data-level="3.1.3" data-path="lacp.html"><a href="lacp.html#methode"><i class="fa fa-check"></i><b>3.1.3</b> Méthode</a></li>
-<li class="chapter" data-level="3.1.4" data-path="lacp.html"><a href="lacp.html#centrer---reduire"><i class="fa fa-check"></i><b>3.1.4</b> Centrer - réduire ?</a></li>
+<li class="chapter" data-level="3" data-path="bien-commencer.html"><a href="bien-commencer.html"><i class="fa fa-check"></i><b>3</b> Bien commencer</a><ul>
+<li class="chapter" data-level="3.1" data-path="bien-commencer.html"><a href="bien-commencer.html#creer-un-projet-sous-rstudio-pour-vous-permettre-de-recencer-vos-travaux."><i class="fa fa-check"></i><b>3.1</b> Créer un projet sous Rstudio pour vous permettre de recencer vos travaux.</a></li>
+<li class="chapter" data-level="3.2" data-path="bien-commencer.html"><a href="bien-commencer.html#integrer-vos-donnees"><i class="fa fa-check"></i><b>3.2</b> Intégrer vos données</a></li>
+<li class="chapter" data-level="3.3" data-path="bien-commencer.html"><a href="bien-commencer.html#creer-votre-arborescence-de-projet"><i class="fa fa-check"></i><b>3.3</b> Créer votre arborescence de projet</a></li>
+<li class="chapter" data-level="3.4" data-path="bien-commencer.html"><a href="bien-commencer.html#activer-les-packages-necessaires"><i class="fa fa-check"></i><b>3.4</b> Activer les packages nécessaires</a></li>
+<li class="chapter" data-level="3.5" data-path="bien-commencer.html"><a href="bien-commencer.html#bien-structurer-ses-projets-data"><i class="fa fa-check"></i><b>3.5</b> Bien structurer ses projets <em>data</em></a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="lacp.html"><a href="lacp.html#lacp-avec-factominer"><i class="fa fa-check"></i><b>3.2</b> L’ACP avec FactoMiner</a><ul>
-<li class="chapter" data-level="3.2.1" data-path="lacp.html"><a href="lacp.html#ressources"><i class="fa fa-check"></i><b>3.2.1</b> Ressources</a></li>
-<li class="chapter" data-level="3.2.2" data-path="lacp.html"><a href="lacp.html#exemple"><i class="fa fa-check"></i><b>3.2.2</b> Exemple</a></li>
-<li class="chapter" data-level="3.2.3" data-path="lacp.html"><a href="lacp.html#reperer-un-effet-taille"><i class="fa fa-check"></i><b>3.2.3</b> Repérer un effet taille</a></li>
+<li class="chapter" data-level="4" data-path="lacp.html"><a href="lacp.html"><i class="fa fa-check"></i><b>4</b> L’ACP</a><ul>
+<li class="chapter" data-level="4.1" data-path="lacp.html"><a href="lacp.html#principe-de-lacp"><i class="fa fa-check"></i><b>4.1</b> Principe de l’ACP</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="lacp.html"><a href="lacp.html#type-de-donnees"><i class="fa fa-check"></i><b>4.1.1</b> Type de données</a></li>
+<li class="chapter" data-level="4.1.2" data-path="lacp.html"><a href="lacp.html#objectifs-1"><i class="fa fa-check"></i><b>4.1.2</b> Objectifs</a></li>
+<li class="chapter" data-level="4.1.3" data-path="lacp.html"><a href="lacp.html#methode"><i class="fa fa-check"></i><b>4.1.3</b> Méthode</a></li>
+<li class="chapter" data-level="4.1.4" data-path="lacp.html"><a href="lacp.html#centrer---reduire"><i class="fa fa-check"></i><b>4.1.4</b> Centrer - réduire ?</a></li>
 </ul></li>
-<li class="chapter" data-level="3.3" data-path="lacp.html"><a href="lacp.html#exercice"><i class="fa fa-check"></i><b>3.3</b> Exercice</a></li>
+<li class="chapter" data-level="4.2" data-path="lacp.html"><a href="lacp.html#lacp-avec-factominer"><i class="fa fa-check"></i><b>4.2</b> L’ACP avec FactoMiner</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="lacp.html"><a href="lacp.html#ressources"><i class="fa fa-check"></i><b>4.2.1</b> Ressources</a></li>
+<li class="chapter" data-level="4.2.2" data-path="lacp.html"><a href="lacp.html#exemple"><i class="fa fa-check"></i><b>4.2.2</b> Exemple</a></li>
+<li class="chapter" data-level="4.2.3" data-path="lacp.html"><a href="lacp.html#reperer-un-effet-taille"><i class="fa fa-check"></i><b>4.2.3</b> Repérer un effet taille</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="lafc.html"><a href="lafc.html"><i class="fa fa-check"></i><b>4</b> L’AFC</a><ul>
-<li class="chapter" data-level="4.1" data-path="lafc.html"><a href="lafc.html#principe-de-lafc"><i class="fa fa-check"></i><b>4.1</b> Principe de l’AFC</a></li>
-<li class="chapter" data-level="4.2" data-path="lafc.html"><a href="lafc.html#lafc-avec-factominer"><i class="fa fa-check"></i><b>4.2</b> L’AFC avec FactoMiner</a><ul>
-<li class="chapter" data-level="4.2.1" data-path="lafc.html"><a href="lafc.html#donnees-utilisees-1"><i class="fa fa-check"></i><b>4.2.1</b> Données utilisées</a></li>
-<li class="chapter" data-level="4.2.2" data-path="lafc.html"><a href="lafc.html#realisation-de-lafc"><i class="fa fa-check"></i><b>4.2.2</b> Réalisation de l’AFC</a></li>
-<li class="chapter" data-level="4.2.3" data-path="lafc.html"><a href="lafc.html#nombre-daxes-a-retenir-1"><i class="fa fa-check"></i><b>4.2.3</b> Nombre d’axes à retenir</a></li>
-<li class="chapter" data-level="4.2.4" data-path="lafc.html"><a href="lafc.html#interpretation-des-axes"><i class="fa fa-check"></i><b>4.2.4</b> Interprétation des axes</a></li>
+<li class="chapter" data-level="4.3" data-path="lacp.html"><a href="lacp.html#exercice"><i class="fa fa-check"></i><b>4.3</b> Exercice</a></li>
 </ul></li>
-<li class="chapter" data-level="4.3" data-path="lafc.html"><a href="lafc.html#exercice-1"><i class="fa fa-check"></i><b>4.3</b> Exercice</a></li>
+<li class="chapter" data-level="5" data-path="lafc.html"><a href="lafc.html"><i class="fa fa-check"></i><b>5</b> L’AFC</a><ul>
+<li class="chapter" data-level="5.1" data-path="lafc.html"><a href="lafc.html#principe-de-lafc"><i class="fa fa-check"></i><b>5.1</b> Principe de l’AFC</a></li>
+<li class="chapter" data-level="5.2" data-path="lafc.html"><a href="lafc.html#lafc-avec-factominer"><i class="fa fa-check"></i><b>5.2</b> L’AFC avec FactoMiner</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="lafc.html"><a href="lafc.html#donnees-utilisees-1"><i class="fa fa-check"></i><b>5.2.1</b> Données utilisées</a></li>
+<li class="chapter" data-level="5.2.2" data-path="lafc.html"><a href="lafc.html#realisation-de-lafc"><i class="fa fa-check"></i><b>5.2.2</b> Réalisation de l’AFC</a></li>
+<li class="chapter" data-level="5.2.3" data-path="lafc.html"><a href="lafc.html#nombre-daxes-a-retenir-1"><i class="fa fa-check"></i><b>5.2.3</b> Nombre d’axes à retenir</a></li>
+<li class="chapter" data-level="5.2.4" data-path="lafc.html"><a href="lafc.html#interpretation-des-axes"><i class="fa fa-check"></i><b>5.2.4</b> Interprétation des axes</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="lacm.html"><a href="lacm.html"><i class="fa fa-check"></i><b>5</b> L’ACM</a><ul>
-<li class="chapter" data-level="5.1" data-path="lacm.html"><a href="lacm.html#principe-de-lacm"><i class="fa fa-check"></i><b>5.1</b> Principe de l’ACM</a><ul>
-<li class="chapter" data-level="5.1.1" data-path="lacm.html"><a href="lacm.html#le-tableau-disjonctif-complet"><i class="fa fa-check"></i><b>5.1.1</b> Le tableau disjonctif complet</a></li>
+<li class="chapter" data-level="5.3" data-path="lafc.html"><a href="lafc.html#exercice-1"><i class="fa fa-check"></i><b>5.3</b> Exercice</a></li>
 </ul></li>
-<li class="chapter" data-level="5.2" data-path="lacm.html"><a href="lacm.html#ressources-1"><i class="fa fa-check"></i><b>5.2</b> Ressources</a></li>
-<li class="chapter" data-level="5.3" data-path="lacm.html"><a href="lacm.html#lacm-avec-factominer"><i class="fa fa-check"></i><b>5.3</b> L’ACM avec FactoMiner</a><ul>
-<li class="chapter" data-level="5.3.1" data-path="lacm.html"><a href="lacm.html#exemple-1"><i class="fa fa-check"></i><b>5.3.1</b> Exemple</a></li>
-<li class="chapter" data-level="5.3.2" data-path="lacm.html"><a href="lacm.html#realisation-de-lacm"><i class="fa fa-check"></i><b>5.3.2</b> Réalisation de l’ACM</a></li>
-<li class="chapter" data-level="5.3.3" data-path="lacm.html"><a href="lacm.html#variables-supplementaires"><i class="fa fa-check"></i><b>5.3.3</b> Variables supplémentaires</a></li>
+<li class="chapter" data-level="6" data-path="lacm.html"><a href="lacm.html"><i class="fa fa-check"></i><b>6</b> L’ACM</a><ul>
+<li class="chapter" data-level="6.1" data-path="lacm.html"><a href="lacm.html#principe-de-lacm"><i class="fa fa-check"></i><b>6.1</b> Principe de l’ACM</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="lacm.html"><a href="lacm.html#le-tableau-disjonctif-complet"><i class="fa fa-check"></i><b>6.1.1</b> Le tableau disjonctif complet</a></li>
 </ul></li>
-<li class="chapter" data-level="5.4" data-path="lacm.html"><a href="lacm.html#exercice-2"><i class="fa fa-check"></i><b>5.4</b> Exercice</a></li>
+<li class="chapter" data-level="6.2" data-path="lacm.html"><a href="lacm.html#ressources-1"><i class="fa fa-check"></i><b>6.2</b> Ressources</a></li>
+<li class="chapter" data-level="6.3" data-path="lacm.html"><a href="lacm.html#lacm-avec-factominer"><i class="fa fa-check"></i><b>6.3</b> L’ACM avec FactoMiner</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="lacm.html"><a href="lacm.html#exemple-1"><i class="fa fa-check"></i><b>6.3.1</b> Exemple</a></li>
+<li class="chapter" data-level="6.3.2" data-path="lacm.html"><a href="lacm.html#realisation-de-lacm"><i class="fa fa-check"></i><b>6.3.2</b> Réalisation de l’ACM</a></li>
+<li class="chapter" data-level="6.3.3" data-path="lacm.html"><a href="lacm.html#variables-supplementaires"><i class="fa fa-check"></i><b>6.3.3</b> Variables supplémentaires</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="classification-clustering.html"><a href="classification-clustering.html"><i class="fa fa-check"></i><b>6</b> Classification (clustering)</a><ul>
-<li class="chapter" data-level="6.1" data-path="classification-clustering.html"><a href="classification-clustering.html#les-k-moyennes"><i class="fa fa-check"></i><b>6.1</b> Les k-moyennes</a><ul>
-<li class="chapter" data-level="6.1.1" data-path="classification-clustering.html"><a href="classification-clustering.html#principe"><i class="fa fa-check"></i><b>6.1.1</b> Principe</a></li>
-<li class="chapter" data-level="6.1.2" data-path="classification-clustering.html"><a href="classification-clustering.html#mise-en-oeuvre"><i class="fa fa-check"></i><b>6.1.2</b> Mise en oeuvre</a></li>
-<li class="chapter" data-level="6.1.3" data-path="classification-clustering.html"><a href="classification-clustering.html#quelques-conseils"><i class="fa fa-check"></i><b>6.1.3</b> Quelques conseils</a></li>
+<li class="chapter" data-level="6.4" data-path="lacm.html"><a href="lacm.html#exercice-2"><i class="fa fa-check"></i><b>6.4</b> Exercice</a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="classification-clustering.html"><a href="classification-clustering.html#la-classification-ascendante-hierarchique-cah"><i class="fa fa-check"></i><b>6.2</b> La classification ascendante hiérarchique (CAH)</a><ul>
-<li class="chapter" data-level="6.2.1" data-path="classification-clustering.html"><a href="classification-clustering.html#determination-du-nombre-de-classes"><i class="fa fa-check"></i><b>6.2.1</b> Détermination du nombre de classes</a></li>
-<li class="chapter" data-level="6.2.2" data-path="classification-clustering.html"><a href="classification-clustering.html#description-des-classes"><i class="fa fa-check"></i><b>6.2.2</b> Description des classes</a></li>
-<li class="chapter" data-level="6.2.3" data-path="classification-clustering.html"><a href="classification-clustering.html#quelques-conseils-pratiques"><i class="fa fa-check"></i><b>6.2.3</b> Quelques conseils pratiques</a></li>
+<li class="chapter" data-level="7" data-path="classification-clustering.html"><a href="classification-clustering.html"><i class="fa fa-check"></i><b>7</b> Classification (clustering)</a><ul>
+<li class="chapter" data-level="7.1" data-path="classification-clustering.html"><a href="classification-clustering.html#les-k-moyennes"><i class="fa fa-check"></i><b>7.1</b> Les k-moyennes</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="classification-clustering.html"><a href="classification-clustering.html#principe"><i class="fa fa-check"></i><b>7.1.1</b> Principe</a></li>
+<li class="chapter" data-level="7.1.2" data-path="classification-clustering.html"><a href="classification-clustering.html#mise-en-oeuvre"><i class="fa fa-check"></i><b>7.1.2</b> Mise en oeuvre</a></li>
+<li class="chapter" data-level="7.1.3" data-path="classification-clustering.html"><a href="classification-clustering.html#quelques-conseils"><i class="fa fa-check"></i><b>7.1.3</b> Quelques conseils</a></li>
 </ul></li>
-<li class="chapter" data-level="6.3" data-path="classification-clustering.html"><a href="classification-clustering.html#exercice-3"><i class="fa fa-check"></i><b>6.3</b> Exercice</a></li>
+<li class="chapter" data-level="7.2" data-path="classification-clustering.html"><a href="classification-clustering.html#la-classification-ascendante-hierarchique-cah"><i class="fa fa-check"></i><b>7.2</b> La classification ascendante hiérarchique (CAH)</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="classification-clustering.html"><a href="classification-clustering.html#determination-du-nombre-de-classes"><i class="fa fa-check"></i><b>7.2.1</b> Détermination du nombre de classes</a></li>
+<li class="chapter" data-level="7.2.2" data-path="classification-clustering.html"><a href="classification-clustering.html#description-des-classes"><i class="fa fa-check"></i><b>7.2.2</b> Description des classes</a></li>
+<li class="chapter" data-level="7.2.3" data-path="classification-clustering.html"><a href="classification-clustering.html#quelques-conseils-pratiques"><i class="fa fa-check"></i><b>7.2.3</b> Quelques conseils pratiques</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="classification-clustering.html"><a href="classification-clustering.html#exercice-3"><i class="fa fa-check"></i><b>7.3</b> Exercice</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -199,18 +205,18 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
             <section class="normal" id="section-">
 <div id="lacp" class="section level1">
-<h1><span class="header-section-number">Chapitre 3</span> L’ACP</h1>
+<h1><span class="header-section-number">Chapitre 4</span> L’ACP</h1>
 <div id="principe-de-lacp" class="section level2">
-<h2><span class="header-section-number">3.1</span> Principe de l’ACP</h2>
+<h2><span class="header-section-number">4.1</span> Principe de l’ACP</h2>
 <div id="type-de-donnees" class="section level3">
-<h3><span class="header-section-number">3.1.1</span> Type de données</h3>
+<h3><span class="header-section-number">4.1.1</span> Type de données</h3>
 <p>On dispose d’un tableau de <span class="math inline">\(n\)</span> lignes et <span class="math inline">\(p\)</span> colonnes actives qui sont uniquement des variables quantitatives (au sens large, des binaires codées 0/1 ou des variables ordinales passent).</p>
 <center>
-<img src="Figures/DF1.png" />
+<img src="images/DF1.png" />
 </center>
 </div>
 <div id="objectifs-1" class="section level3">
-<h3><span class="header-section-number">3.1.2</span> Objectifs</h3>
+<h3><span class="header-section-number">4.1.2</span> Objectifs</h3>
 <p>Une ACP peut permettre de :</p>
 <ul>
 <li>Résumer l’information.</li>
@@ -219,12 +225,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul>
 </div>
 <div id="methode" class="section level3">
-<h3><span class="header-section-number">3.1.3</span> Méthode</h3>
+<h3><span class="header-section-number">4.1.3</span> Méthode</h3>
 <p>L’ACP va déterminer, dans un espace à <span class="math inline">\(p\)</span> dimensions (sous l’hypothèse qu’aucune des variables n’est une combinaison linéaire des autres), l’axe le long duquel les points représentant les individus sont les plus “étalés”. Cet axe <span class="math inline">\(F_1\)</span> est une combinaison linéaire des variables de départ.</p>
 <p>Dans l’exemple graphique ci-dessous et en 2D, la dispersion des points est essentiellement le long de l’axe bleu. L’axe rouge est orthogonal au bleu. Dans le repère <span class="math inline">\((O, x, y)\)</span>, la variance est à peu près équivalente sur <span class="math inline">\(x\)</span> et sur <span class="math inline">\(y\)</span>. A l’inverse, dans le repère constitué des axes de couleur, la variance est portée essentiellement sur le bleu tandis que le rouge ne porte qu’une faible partie de l’inertie du nuage de point. En gros, l’axe bleu est la première composante principale, généralement notée <span class="math inline">\(PC_1\)</span> ou <span class="math inline">\(F_1\)</span>, et le rouge <span class="math inline">\(PC_2\)</span> ou <span class="math inline">\(F_2\)</span>.</p>
 <p><img src="exploration_avancee_files/figure-html/graph_2d-1.png" width="576" /></p>
 <p>Ce changement de repère peut être visualisé ainsi :</p>
-<p><img src="exploration_avancee_files/figure-html/unnamed-chunk-2-1.png" width="576" /></p>
+<p><img src="exploration_avancee_files/figure-html/unnamed-chunk-3-1.png" width="576" /></p>
 <p>Dans ce nouveau repère, l’essentiel de la dispersion des points peut être “résumé” par leur position sur <span class="math inline">\(F_1\)</span>.</p>
 <p>La <em>variance</em> du nuage de points caractérise sa dispersion. C’est la moyenne, sur l’ensemble des points, des carrés des distances au centre d’inertie du nuage. D’après le théorème de Pythagore, elle peut être décomposée en composantes orthogonales car <span class="math inline">\(d^2=d_1^2+d_2^2\)</span>.</p>
 <p><span class="math inline">\(V={\frac 1n}\sum _{{i=1}}^{n}(d_{i})^{2}\\  ={\frac 1n}\sum _{{i=1}}^{n}[(d_{1i})^{2}+(d_{2i})^{2}]\\  ={\frac 1n}\sum _{{i=1}}^{n}(d_{1i})^{2}+{\frac 1n}\sum _{{i=1}}^{n}(d_{2i})^{2}\\  =V_1+V_2\)</span></p>
@@ -234,16 +240,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p>En d’autres termes, l’ACP consiste à construire un nouvel espace vectoriel orthonormé (les variables construites sont non-corrélées 2 à 2) de même dimension que l’espace de départ, mais où l’inertie sera concentrée sur les premiers <em>axes factoriels</em>. Mathématiquement, cela conduit à diagonaliser la matrice de variance-covariance ; les valeurs propres correspondent à la part de l’inertie totale portée par chaque axe factoriel.</p>
 </div>
 <div id="centrer---reduire" class="section level3">
-<h3><span class="header-section-number">3.1.4</span> Centrer - réduire ?</h3>
+<h3><span class="header-section-number">4.1.4</span> Centrer - réduire ?</h3>
 <p>Si l’on a des variables de dispersion (variance) très différentes, ou d’unités différentes, en général il fait centrer (retrancher la moyenne) et réduire (diviser par l’écart-type) chacune des variables avant d’effectuer l’ACP. Dans ce cas chacune des variables a la même importance (variance de 1) <span class="math inline">\(\Rightarrow\)</span> l’inertie du nuage vaut <span class="math inline">\(p\)</span>.</p>
 <p>C’est l’option par défaut dans la fonction <code>PCA</code> de FactoMineR (<code>scale.unit = TRUE</code>), qui réalise donc une ACP dite “normée”.</p>
 <p><strong>Note :</strong> Les espaces des variables et des individus ne sont pas les mêmes en ACP <span class="math inline">\(\Rightarrow\)</span> on ne peut pas les représenter simultanément. Dans les autres analyses, on le peut.</p>
 </div>
 </div>
 <div id="lacp-avec-factominer" class="section level2">
-<h2><span class="header-section-number">3.2</span> L’ACP avec FactoMiner</h2>
+<h2><span class="header-section-number">4.2</span> L’ACP avec FactoMiner</h2>
 <div id="ressources" class="section level3">
-<h3><span class="header-section-number">3.2.1</span> Ressources</h3>
+<h3><span class="header-section-number">4.2.1</span> Ressources</h3>
 <ul>
 <li>Une <a href="https://www.youtube.com/watch?v=1QPRsg3Bxok">explication en vidéo par l’auteur du package FactoMiner</a></li>
 <li>Un <a href="http://factominer.free.fr/course/doc/AnaDo_ACP_Facto_Decathlon_Markdown.pdf">tuto associé</a> en pdf.</li>
@@ -251,9 +257,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul>
 </div>
 <div id="exemple" class="section level3">
-<h3><span class="header-section-number">3.2.2</span> Exemple</h3>
+<h3><span class="header-section-number">4.2.2</span> Exemple</h3>
 <div id="donnees-utilisees" class="section level4">
-<h4><span class="header-section-number">3.2.2.1</span> Données utilisées</h4>
+<h4><span class="header-section-number">4.2.2.1</span> Données utilisées</h4>
 <ul>
 <li>Données communales téléchargées sur <a href="http://geoidd.developpement-durable.gouv.fr/geoclip_stats_o3/index.php?profil=FR#s=2012;v=map1;i=ocs.p_surf_c1;l=fr">Géoïdd</a> et converties en format <em>.csv</em> (<strong>attention aux valeurs N/A ou autres dans le fichier Excel qui peuvent parasiter l’importation de données</strong>).</li>
 <li>Les individus statistiques sont les communes (lignes) et les variables (colonnes) différents indicateurs décrivant ces communes.</li>
@@ -262,12 +268,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul>
 </div>
 <div id="importation-et-exploration-rapide" class="section level4">
-<h4><span class="header-section-number">3.2.2.2</span> Importation et exploration rapide</h4>
+<h4><span class="header-section-number">4.2.2.2</span> Importation et exploration rapide</h4>
 <p>Les données sont dans le fichier <em>ACP.csv</em>.</p>
 <p>Le fait d’affecter les code géographiques comme <code>row.names</code> du dataframe permet de mieux identifier les individus sur les graphiques (et les sorties) par la suite.</p>
 <p>ATTENTION, certaines fonctions du package <code>dplyr</code> du tidyverse, comme <code>mutate</code>, suppriment les noms des lignes.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">geoidd &lt;-<span class="st"> </span><span class="kw">read.csv2</span> (<span class="dt">file =</span> <span class="st">&quot;Exercices/ACP.csv&quot;</span>, <span class="dt">header =</span> T, <span class="dt">encoding =</span> <span class="st">&quot;latin1&quot;</span>)
-dat &lt;-<span class="st"> </span>geoidd <span class="op">%&gt;%</span>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">dat &lt;-<span class="st"> </span>geoidd <span class="op">%&gt;%</span>
 <span class="st">  </span><span class="kw">select</span> (<span class="op">-</span>code, <span class="op">-</span>communes)
 <span class="kw">row.names</span> (dat) &lt;-<span class="st"> </span>geoidd<span class="op">$</span>code
 
@@ -293,10 +298,10 @@ dat &lt;-<span class="st"> </span>dat <span class="op">%&gt;%</span>
 <p>On remarque dans un premier temps que les corrélations ne sont pas très élevées entre les variables. La corrélation la plus élevée est celle entre la densité de population et la part de terres artificialisées. Le lien entre les variables <em>PPRN</em> et <em>Agenda21</em> est peu évident avec le tableau de fréquences.</p>
 <p>On peut utiliser les fonctions vues dans le module 3 pour explorer les données :</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">select</span> (dat, <span class="op">-</span>PPRN, <span class="op">-</span>agd21) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">ggpairs</span>()</code></pre></div>
-<p><img src="exploration_avancee_files/figure-html/unnamed-chunk-5-1.png" width="576" /></p>
+<p><img src="exploration_avancee_files/figure-html/unnamed-chunk-6-1.png" width="576" /></p>
 </div>
 <div id="realiser-lacp" class="section level4">
-<h4><span class="header-section-number">3.2.2.3</span> Réaliser l’ACP</h4>
+<h4><span class="header-section-number">4.2.2.3</span> Réaliser l’ACP</h4>
 <p>Pour voir l’aide : <code>?PCA</code>.</p>
 <p>On voit que par défaut les variables sont centrées - réduites et que les valeurs manquantes sont remplacées par la moyenne de la colonne à laquelle elles appartiennent. Il est important de se questionner sur la pertinence de ces options “par défaut”.</p>
 <p>Réalisation de l’ACP :</p>
@@ -340,7 +345,7 @@ dat &lt;-<span class="st"> </span>dat <span class="op">%&gt;%</span>
 <p><img src="exploration_avancee_files/figure-html/plot_acp-1.png" width="576" /></p>
 </div>
 <div id="nombre-daxes-a-retenir" class="section level4">
-<h4><span class="header-section-number">3.2.2.4</span> Nombre d’axes à retenir</h4>
+<h4><span class="header-section-number">4.2.2.4</span> Nombre d’axes à retenir</h4>
 <p>On accède aux valeurs propres par l’objet <code>acp$eig</code> :</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">acp<span class="op">$</span>eig</code></pre></div>
 <pre><code>##        eigenvalue percentage of variance cumulative percentage of variance
@@ -360,7 +365,7 @@ mm &lt;-<span class="st"> </span><span class="kw">mean</span> (eig<span class="o
 <span class="st">  </span><span class="kw">scale_y_continuous</span> (<span class="dt">labels =</span> <span class="cf">function</span>(x) <span class="kw">paste0</span>(x, <span class="st">&quot;%&quot;</span>)) <span class="op">+</span>
 <span class="st">  </span><span class="kw">geom_hline</span> (<span class="dt">yintercept =</span> <span class="dv">20</span>, <span class="dt">colour=</span><span class="st">&quot;red&quot;</span>, <span class="dt">linetype=</span><span class="st">&quot;dashed&quot;</span>) <span class="op">+</span>
 <span class="st">  </span><span class="kw">coord_flip</span> ()</code></pre></div>
-<p><img src="exploration_avancee_files/figure-html/unnamed-chunk-11-1.png" width="576" /></p>
+<p><img src="exploration_avancee_files/figure-html/unnamed-chunk-12-1.png" width="576" /></p>
 <p>Pour choisir le nombre d’axes à conserver, on peut utiliser plusieurs critères :</p>
 <ul>
 <li>Critère de l’inertie moyenne : on retient les axes qui représentent plus d’inertie que la moyenne (=inertie totale/nombre de variables). Cette inertie vaut <strong>1</strong> dans le cas de l’ACP normée (soit 20% dans notre cas). Cela revient à se dire qu’on ne prend que les nouvelles variables qui portent plus d’inertie que les variables initiales.</li>
@@ -378,7 +383,7 @@ mm &lt;-<span class="st"> </span><span class="kw">mean</span> (eig<span class="o
 <p>Ici, le critère de l’inertie moyenne incite à retenir les 2 premiers axes alors que le critère du coude en retiendrait 3 (la dérivée seconde change de signe entre la 3e et 4e valeur propre). Généralement, on prend le critère le plus parcimonieux pour s’épargner du travail ensuite !</p>
 </div>
 <div id="interpreter-les-axes" class="section level4">
-<h4><span class="header-section-number">3.2.2.5</span> Interpréter les axes</h4>
+<h4><span class="header-section-number">4.2.2.5</span> Interpréter les axes</h4>
 <ul>
 <li>Rappel : les axes factoriels sont des combinaisons linéaires des variables initiales. On regarde donc l’importance de ces variables initiales dans les différents axes pour leur <em>donner du sens</em>.</li>
 <li>On doit regarder trois grandeurs pour interpréter (dans cet ordre) :
@@ -390,7 +395,7 @@ mm &lt;-<span class="st"> </span><span class="kw">mean</span> (eig<span class="o
 </ul>
 <p>On visualise le <strong>cercle des corrélations</strong>. En ACP, qualité et contribution dépendent directement de la coordonnée : il suffit que celle-ci soit élevée pour que la qualité de représentation soit bonne et la contribution forte. Pour obtenir ce graphique, on utilise la fonction <code>plot.PCA</code>, avec l’argument <code>choix = &quot;var&quot;</code>.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot.PCA</span> (acp, <span class="dt">choix =</span> <span class="st">&quot;var&quot;</span>, <span class="dt">col.var =</span> <span class="st">&quot;blue&quot;</span>)</code></pre></div>
-<p><img src="exploration_avancee_files/figure-html/unnamed-chunk-13-1.png" width="576" /></p>
+<p><img src="exploration_avancee_files/figure-html/unnamed-chunk-14-1.png" width="576" /></p>
 <p><span class="math inline">\(\Rightarrow\)</span> on regarde avant tout les variables proches du cercle unité.</p>
 <p>A partir de ce cercle (sur le premier plan factoriel), on voit que :</p>
 <ul>
@@ -532,11 +537,11 @@ mm &lt;-<span class="st"> </span><span class="kw">mean</span> (eig<span class="o
 ## Agenda21  0         -0.06699392 7.791424e-18</code></pre>
 <p>On peut également regarder la projection des individus dans le plan. Ce n’est pas toujours très informatif, ça peut permettre de repérer : - Des groupes d’individus quand il existe des discontinuités. - Des valeurs extrêmes qui peuvent contribuer exagérément aux axes (donc qui nuisent à la représentation du reste des individus).</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot.PCA</span> (acp, <span class="dt">choix =</span> <span class="st">&quot;ind&quot;</span>, <span class="dt">col.ind =</span> <span class="st">&quot;lightblue&quot;</span>)</code></pre></div>
-<p><img src="exploration_avancee_files/figure-html/unnamed-chunk-15-1.png" width="576" /></p>
+<p><img src="exploration_avancee_files/figure-html/unnamed-chunk-16-1.png" width="576" /></p>
 <p>N’oubliez pas de consulter l’aide des fonctions présentées pour plus d’options.</p>
 </div>
 <div id="les-variables-supplementaires" class="section level4">
-<h4><span class="header-section-number">3.2.2.6</span> Les variables supplémentaires</h4>
+<h4><span class="header-section-number">4.2.2.6</span> Les variables supplémentaires</h4>
 <p>Dans toutes les analyses factorielles, on distingue les <strong>variables actives</strong>, qui participent de la création du nouvel espace vectoriel, des <strong>variables supplémentaires</strong>, que l’on projette <em>a posteriori</em> sur cet espace, mais qui n’interviennent pas dans la construction des variables synthétiques.</p>
 <ul>
 <li>Elles peuvent être qualitatives ou quantitatives.</li>
@@ -548,28 +553,28 @@ mm &lt;-<span class="st"> </span><span class="kw">mean</span> (eig<span class="o
 <p><span class="math inline">\(\Rightarrow\)</span> Pas lien entre le PPRN et les autres variables : elles se projettent au centre du nuage de points. Les communes disposant d’un PPRN ou d’un Agenda21 n’ont donc pas de caractéristiques particulières.</p>
 <p>On peut utiliser le paramètre <code>select</code> pour mettre en évidence certains individus ou variables en fonction de leur contribution ou qualité de représentation. Par exemple <code>select = &quot;contrib 20&quot;</code> permet de n’afficher les étiquettes que des individus qui contribuent le plus aux deux axes représent</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot.PCA</span> (acp, <span class="dt">choix =</span> <span class="st">&quot;ind&quot;</span>, <span class="dt">select =</span> <span class="st">&quot;contrib 20&quot;</span>)</code></pre></div>
-<p><img src="exploration_avancee_files/figure-html/unnamed-chunk-16-1.png" width="576" /></p>
+<p><img src="exploration_avancee_files/figure-html/unnamed-chunk-17-1.png" width="576" /></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot.PCA</span> (acp, <span class="dt">choix =</span> <span class="st">&quot;ind&quot;</span>, <span class="dt">select =</span> <span class="st">&quot;cos2 20&quot;</span>)</code></pre></div>
-<p><img src="exploration_avancee_files/figure-html/unnamed-chunk-16-2.png" width="576" /></p>
+<p><img src="exploration_avancee_files/figure-html/unnamed-chunk-17-2.png" width="576" /></p>
 </div>
 </div>
 <div id="reperer-un-effet-taille" class="section level3">
-<h3><span class="header-section-number">3.2.3</span> Repérer un effet taille</h3>
+<h3><span class="header-section-number">4.2.3</span> Repérer un effet taille</h3>
 <p>L’effet taille se recontre assez fréquemment quand on réalise une ACP : il se manifeste par :</p>
 <ul>
 <li>Toutes les variables sont de même signe sur le premier axe factoriel (donc elles sont toutes corrélées positivement entre elles) et celui-ci contient une très grand part de l’inertie.</li>
 <li>Dans ce cas, l’axe 1 constitue un <strong>gradient</strong> : il permet de classer les individus du plus “petit” au plus “grand”, sur toutes les variables simultanément.</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">taille &lt;-<span class="st"> </span><span class="kw">read.csv2</span> (<span class="st">&quot;Exercices/Effet_taille.csv&quot;</span>, <span class="dt">header =</span> <span class="ot">TRUE</span>,
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">taille &lt;-<span class="st"> </span><span class="kw">read.csv2</span> (<span class="st">&quot;data/Effet_taille.csv&quot;</span>, <span class="dt">header =</span> <span class="ot">TRUE</span>,
                      <span class="dt">encoding =</span> <span class="st">&quot;latin1&quot;</span>)
 t &lt;-<span class="st"> </span><span class="kw">PCA</span> (<span class="kw">na.omit</span> (taille[,<span class="op">-</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>)]), <span class="dt">graph =</span> <span class="ot">FALSE</span>)
 <span class="kw">plot.PCA</span> (t, <span class="dt">choix =</span> <span class="kw">c</span> (<span class="st">&quot;var&quot;</span>), <span class="dt">col.var =</span> <span class="st">&quot;blue&quot;</span>)</code></pre></div>
-<p><img src="exploration_avancee_files/figure-html/unnamed-chunk-17-1.png" width="576" /></p>
+<p><img src="exploration_avancee_files/figure-html/unnamed-chunk-18-1.png" width="576" /></p>
 <p>Ce type de configuration peut décevoir quand on ne s’y attend pas. Cependant, il peut y avoir un intérêt car l’axe <span class="math inline">\(F_1\)</span> synthétise, de manière objectifs et multidimensionnelle le lien entre les variables. Ici, revenus, diplômes et statut de cadre sont très liés. Si l’on voulait étudier si ces variables sont corrélées à d’autres caractéristiques des individus, plutôt que de faire 3 analyses semblables, ou de choisir une de ces 3 variables, on pourrait prendre les coordonnées des individus sur <span class="math inline">\(F_1\)</span> (<code>t$ind$coord[, 1</code>) comme variable de synthèse.</p>
 </div>
 </div>
 <div id="exercice" class="section level2">
-<h2><span class="header-section-number">3.3</span> Exercice</h2>
+<h2><span class="header-section-number">4.3</span> Exercice</h2>
 <p>A partir du <code>dataframe</code> <em>iris</em> inclus dans R :</p>
 <ul>
 <li>Explorer rapidement le jeu de données. Quel est le type des variables ?</li>
@@ -579,9 +584,9 @@ t &lt;-<span class="st"> </span><span class="kw">PCA</span> (<span class="kw">na
 </ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">data</span> (<span class="st">&quot;iris&quot;</span>)
 <span class="kw">ggpairs</span> (iris)</code></pre></div>
-<p><img src="exploration_avancee_files/figure-html/unnamed-chunk-18-1.png" width="576" /></p>
+<p><img src="exploration_avancee_files/figure-html/unnamed-chunk-19-1.png" width="576" /></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">acp.iris &lt;-<span class="st"> </span><span class="kw">select</span> (iris, <span class="op">-</span>Species) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">PCA</span>()</code></pre></div>
-<p><img src="exploration_avancee_files/figure-html/unnamed-chunk-18-2.png" width="576" /><img src="exploration_avancee_files/figure-html/unnamed-chunk-18-3.png" width="576" /></p>
+<p><img src="exploration_avancee_files/figure-html/unnamed-chunk-19-2.png" width="576" /><img src="exploration_avancee_files/figure-html/unnamed-chunk-19-3.png" width="576" /></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">summary</span> (acp.iris)
 ## 
 ## Call:
@@ -652,7 +657,7 @@ t &lt;-<span class="st"> </span><span class="kw">PCA</span> (<span class="kw">na
 ## Petal.Width    0.2429827 0.0027349555
 ## Sepal.Length  -0.2756577 0.0006395628
 acp.iris &lt;-<span class="st"> </span><span class="kw">PCA</span>(iris, <span class="dt">quali.sup =</span> <span class="dv">5</span>)</code></pre></div>
-<p><img src="exploration_avancee_files/figure-html/unnamed-chunk-18-4.png" width="576" /><img src="exploration_avancee_files/figure-html/unnamed-chunk-18-5.png" width="576" /></p>
+<p><img src="exploration_avancee_files/figure-html/unnamed-chunk-19-4.png" width="576" /><img src="exploration_avancee_files/figure-html/unnamed-chunk-19-5.png" width="576" /></p>
 
 </div>
 </div>
@@ -661,7 +666,7 @@ acp.iris &lt;-<span class="st"> </span><span class="kw">PCA</span>(iris, <span c
           </div>
         </div>
       </div>
-<a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="bien-commencer.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="lafc.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>

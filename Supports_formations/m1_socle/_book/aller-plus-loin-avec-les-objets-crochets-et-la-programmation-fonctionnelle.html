@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html >
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Chapitre 9 Aller plus loin avec les objets, crochets et la programmation fonctionnelle | Découvrir R et RStudio</title>
-  <meta name="description" content="Formation R socle">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapitre 10 Aller plus loin avec les objets, crochets et la programmation fonctionnelle | Découvrir R et RStudio</title>
+  <meta name="description" content="Formation R socle" />
+  <meta name="generator" content="bookdown 0.10 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapitre 9 Aller plus loin avec les objets, crochets et la programmation fonctionnelle | Découvrir R et RStudio" />
+  <meta property="og:title" content="Chapitre 10 Aller plus loin avec les objets, crochets et la programmation fonctionnelle | Découvrir R et RStudio" />
   <meta property="og:type" content="book" />
   
   
@@ -17,18 +16,18 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapitre 9 Aller plus loin avec les objets, crochets et la programmation fonctionnelle | Découvrir R et RStudio" />
+  <meta name="twitter:title" content="Chapitre 10 Aller plus loin avec les objets, crochets et la programmation fonctionnelle | Découvrir R et RStudio" />
   
   <meta name="twitter:description" content="Formation R socle" />
   
 
-<meta name="author" content="Groupe des référents R">
+<meta name="author" content="Thierry Zorn, Murielle Lethrosne, Vivien Roussez &amp; Pascal Irz" />
 
 
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
 <link rel="prev" href="sauvegarder-son-travail.html">
@@ -107,12 +106,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Débuter avec R et Rstudio</a></li>
+<li><p style="text-align:center;"><img src="https://www.alerte-sante-environnement-deontologie.fr/IMG/siteon0.svg?1550857332" style="width:150px;"/></p><p><a href="./">Débuter avec R et Rstudio</a></p></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
 <li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#le-parcours-de-formation"><i class="fa fa-check"></i><b>1.1</b> Le parcours de formation</a></li>
-<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#objectifs-du-module"><i class="fa fa-check"></i><b>1.2</b> Objectifs du module</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#objectifs-du-module-1"><i class="fa fa-check"></i><b>1.2</b> Objectifs du module 1</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="r-son-ecosysteme-et-ses-possibilites.html"><a href="r-son-ecosysteme-et-ses-possibilites.html"><i class="fa fa-check"></i><b>2</b> R, son écosystème et ses possibilités</a><ul>
 <li class="chapter" data-level="2.1" data-path="r-son-ecosysteme-et-ses-possibilites.html"><a href="r-son-ecosysteme-et-ses-possibilites.html#le-groupe-de-referents"><i class="fa fa-check"></i><b>2.1</b> Le groupe de référents</a></li>
@@ -135,60 +134,67 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul></li>
 <li class="chapter" data-level="4" data-path="mon-premier-jeu-de-donnees.html"><a href="mon-premier-jeu-de-donnees.html"><i class="fa fa-check"></i><b>4</b> Mon premier jeu de données</a><ul>
 <li class="chapter" data-level="4.1" data-path="mon-premier-jeu-de-donnees.html"><a href="mon-premier-jeu-de-donnees.html#les-types-de-valeurs-dans-r"><i class="fa fa-check"></i><b>4.1</b> Les types de valeurs dans R</a></li>
-<li class="chapter" data-level="4.2" data-path="mon-premier-jeu-de-donnees.html"><a href="mon-premier-jeu-de-donnees.html#avant-de-manipuler-le-data.frame-installer-et-charger-un-package"><i class="fa fa-check"></i><b>4.2</b> Avant de manipuler le data.frame : installer et charger un package</a></li>
+<li class="chapter" data-level="4.2" data-path="mon-premier-jeu-de-donnees.html"><a href="mon-premier-jeu-de-donnees.html#avant-de-manipuler-le-dataframe-installer-et-charger-un-package"><i class="fa fa-check"></i><b>4.2</b> Avant de manipuler le <em>dataframe</em> : installer et charger un <em>package</em></a></li>
 <li class="chapter" data-level="4.3" data-path="mon-premier-jeu-de-donnees.html"><a href="mon-premier-jeu-de-donnees.html#importation-de-donnees"><i class="fa fa-check"></i><b>4.3</b> Importation de données</a></li>
 <li class="chapter" data-level="4.4" data-path="mon-premier-jeu-de-donnees.html"><a href="mon-premier-jeu-de-donnees.html#structure-des-donnees-le-dataframe"><i class="fa fa-check"></i><b>4.4</b> Structure des données : le <em>dataframe</em></a></li>
 <li class="chapter" data-level="4.5" data-path="mon-premier-jeu-de-donnees.html"><a href="mon-premier-jeu-de-donnees.html#gerer-le-type-des-variables"><i class="fa fa-check"></i><b>4.5</b> Gérer le type des variables</a></li>
 <li class="chapter" data-level="4.6" data-path="mon-premier-jeu-de-donnees.html"><a href="mon-premier-jeu-de-donnees.html#les-valeurs-particulieres"><i class="fa fa-check"></i><b>4.6</b> Les valeurs particulières</a></li>
 <li class="chapter" data-level="4.7" data-path="mon-premier-jeu-de-donnees.html"><a href="mon-premier-jeu-de-donnees.html#exercice-importer-les-donnees-et-premier-coup-doeil"><i class="fa fa-check"></i><b>4.7</b> Exercice : Importer les données et premier coup d’oeil</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="premiere-manipulation-des-donnees.html"><a href="premiere-manipulation-des-donnees.html"><i class="fa fa-check"></i><b>5</b> Première manipulation des données</a><ul>
-<li class="chapter" data-level="5.1" data-path="premiere-manipulation-des-donnees.html"><a href="premiere-manipulation-des-donnees.html#afficher-les-valeurs-et-manipuler-les-variables"><i class="fa fa-check"></i><b>5.1</b> Afficher les valeurs et manipuler les variables</a></li>
-<li class="chapter" data-level="5.2" data-path="premiere-manipulation-des-donnees.html"><a href="premiere-manipulation-des-donnees.html#creer-de-nouvelles-variables"><i class="fa fa-check"></i><b>5.2</b> Créer de nouvelles variables</a></li>
-<li class="chapter" data-level="5.3" data-path="premiere-manipulation-des-donnees.html"><a href="premiere-manipulation-des-donnees.html#selectionner-des-variables"><i class="fa fa-check"></i><b>5.3</b> Sélectionner des variables</a></li>
-<li class="chapter" data-level="5.4" data-path="premiere-manipulation-des-donnees.html"><a href="premiere-manipulation-des-donnees.html#filtrer-des-observations"><i class="fa fa-check"></i><b>5.4</b> Filtrer des observations</a></li>
-<li class="chapter" data-level="5.5" data-path="premiere-manipulation-des-donnees.html"><a href="premiere-manipulation-des-donnees.html#les-tests-logiques-dans-r"><i class="fa fa-check"></i><b>5.5</b> Les tests logiques dans R</a></li>
-<li class="chapter" data-level="5.6" data-path="premiere-manipulation-des-donnees.html"><a href="premiere-manipulation-des-donnees.html#renommer-des-colonnes"><i class="fa fa-check"></i><b>5.6</b> Renommer des colonnes</a></li>
-<li class="chapter" data-level="5.7" data-path="premiere-manipulation-des-donnees.html"><a href="premiere-manipulation-des-donnees.html#exercice-creer-filtrer-selectionner"><i class="fa fa-check"></i><b>5.7</b> Exercice : Créer, filtrer, sélectionner</a></li>
+<li class="chapter" data-level="5" data-path="bien-commencer.html"><a href="bien-commencer.html"><i class="fa fa-check"></i><b>5</b> Bien commencer</a><ul>
+<li class="chapter" data-level="5.1" data-path="bien-commencer.html"><a href="bien-commencer.html#creer-un-projet-sous-rstudio-pour-vous-permettre-de-recencer-vos-travaux."><i class="fa fa-check"></i><b>5.1</b> Créer un projet sous Rstudio pour vous permettre de recencer vos travaux.</a></li>
+<li class="chapter" data-level="5.2" data-path="bien-commencer.html"><a href="bien-commencer.html#integrer-vos-donnees"><i class="fa fa-check"></i><b>5.2</b> Intégrer vos données</a></li>
+<li class="chapter" data-level="5.3" data-path="bien-commencer.html"><a href="bien-commencer.html#creer-votre-arborescence-de-projet"><i class="fa fa-check"></i><b>5.3</b> Créer votre arborescence de projet</a></li>
+<li class="chapter" data-level="5.4" data-path="bien-commencer.html"><a href="bien-commencer.html#activer-les-packages-necessaires"><i class="fa fa-check"></i><b>5.4</b> Activer les packages nécessaires</a></li>
+<li class="chapter" data-level="5.5" data-path="bien-commencer.html"><a href="bien-commencer.html#bien-structurer-ses-projets-data"><i class="fa fa-check"></i><b>5.5</b> Bien structurer ses projets <em>data</em></a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="premiers-traitements-statistiques.html"><a href="premiers-traitements-statistiques.html"><i class="fa fa-check"></i><b>6</b> Premiers traitements statistiques</a><ul>
-<li class="chapter" data-level="6.1" data-path="premiers-traitements-statistiques.html"><a href="premiers-traitements-statistiques.html#obtenir-des-informations"><i class="fa fa-check"></i><b>6.1</b> Obtenir des informations</a></li>
-<li class="chapter" data-level="6.2" data-path="premiers-traitements-statistiques.html"><a href="premiers-traitements-statistiques.html#calculer-des-statistiques-specifiques"><i class="fa fa-check"></i><b>6.2</b> Calculer des statistiques spécifiques</a></li>
-<li class="chapter" data-level="6.3" data-path="premiers-traitements-statistiques.html"><a href="premiers-traitements-statistiques.html#agreger-des-donnees"><i class="fa fa-check"></i><b>6.3</b> Agréger des données</a><ul>
-<li class="chapter" data-level="6.3.1" data-path="premiers-traitements-statistiques.html"><a href="premiers-traitements-statistiques.html#globalement"><i class="fa fa-check"></i><b>6.3.1</b> Globalement</a></li>
-<li class="chapter" data-level="6.3.2" data-path="premiers-traitements-statistiques.html"><a href="premiers-traitements-statistiques.html#selon-un-facteur"><i class="fa fa-check"></i><b>6.3.2</b> Selon un facteur</a></li>
+<li class="chapter" data-level="6" data-path="premiere-manipulation-des-donnees.html"><a href="premiere-manipulation-des-donnees.html"><i class="fa fa-check"></i><b>6</b> Première manipulation des données</a><ul>
+<li class="chapter" data-level="6.1" data-path="premiere-manipulation-des-donnees.html"><a href="premiere-manipulation-des-donnees.html#afficher-les-valeurs-et-manipuler-les-variables"><i class="fa fa-check"></i><b>6.1</b> Afficher les valeurs et manipuler les variables</a></li>
+<li class="chapter" data-level="6.2" data-path="premiere-manipulation-des-donnees.html"><a href="premiere-manipulation-des-donnees.html#creer-de-nouvelles-variables"><i class="fa fa-check"></i><b>6.2</b> Créer de nouvelles variables</a></li>
+<li class="chapter" data-level="6.3" data-path="premiere-manipulation-des-donnees.html"><a href="premiere-manipulation-des-donnees.html#selectionner-des-variables"><i class="fa fa-check"></i><b>6.3</b> Sélectionner des variables</a></li>
+<li class="chapter" data-level="6.4" data-path="premiere-manipulation-des-donnees.html"><a href="premiere-manipulation-des-donnees.html#filtrer-des-observations"><i class="fa fa-check"></i><b>6.4</b> Filtrer des observations</a></li>
+<li class="chapter" data-level="6.5" data-path="premiere-manipulation-des-donnees.html"><a href="premiere-manipulation-des-donnees.html#les-tests-logiques-dans-r"><i class="fa fa-check"></i><b>6.5</b> Les tests logiques dans R</a></li>
+<li class="chapter" data-level="6.6" data-path="premiere-manipulation-des-donnees.html"><a href="premiere-manipulation-des-donnees.html#renommer-des-colonnes"><i class="fa fa-check"></i><b>6.6</b> Renommer des colonnes</a></li>
+<li class="chapter" data-level="6.7" data-path="premiere-manipulation-des-donnees.html"><a href="premiere-manipulation-des-donnees.html#exercice-creer-filtrer-selectionner"><i class="fa fa-check"></i><b>6.7</b> Exercice : Créer, filtrer, sélectionner</a></li>
 </ul></li>
-<li class="chapter" data-level="6.4" data-path="premiers-traitements-statistiques.html"><a href="premiers-traitements-statistiques.html#tableau-de-contingence"><i class="fa fa-check"></i><b>6.4</b> Tableau de contingence</a></li>
-<li class="chapter" data-level="6.5" data-path="premiers-traitements-statistiques.html"><a href="premiers-traitements-statistiques.html#tableau-de-proportions"><i class="fa fa-check"></i><b>6.5</b> Tableau de proportions</a></li>
-<li class="chapter" data-level="6.6" data-path="premiers-traitements-statistiques.html"><a href="premiers-traitements-statistiques.html#exercice-calcul-de-statistiques"><i class="fa fa-check"></i><b>6.6</b> Exercice : calcul de statistiques</a></li>
+<li class="chapter" data-level="7" data-path="premiers-traitements-statistiques.html"><a href="premiers-traitements-statistiques.html"><i class="fa fa-check"></i><b>7</b> Premiers traitements statistiques</a><ul>
+<li class="chapter" data-level="7.1" data-path="premiers-traitements-statistiques.html"><a href="premiers-traitements-statistiques.html#obtenir-des-informations"><i class="fa fa-check"></i><b>7.1</b> Obtenir des informations</a></li>
+<li class="chapter" data-level="7.2" data-path="premiers-traitements-statistiques.html"><a href="premiers-traitements-statistiques.html#calculer-des-statistiques-specifiques"><i class="fa fa-check"></i><b>7.2</b> Calculer des statistiques spécifiques</a></li>
+<li class="chapter" data-level="7.3" data-path="premiers-traitements-statistiques.html"><a href="premiers-traitements-statistiques.html#agreger-des-donnees"><i class="fa fa-check"></i><b>7.3</b> Agréger des données</a><ul>
+<li class="chapter" data-level="7.3.1" data-path="premiers-traitements-statistiques.html"><a href="premiers-traitements-statistiques.html#globalement"><i class="fa fa-check"></i><b>7.3.1</b> Globalement</a></li>
+<li class="chapter" data-level="7.3.2" data-path="premiers-traitements-statistiques.html"><a href="premiers-traitements-statistiques.html#selon-un-facteur"><i class="fa fa-check"></i><b>7.3.2</b> Selon un facteur</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="premiers-graphiques.html"><a href="premiers-graphiques.html"><i class="fa fa-check"></i><b>7</b> Premiers graphiques</a><ul>
-<li class="chapter" data-level="7.1" data-path="premiers-graphiques.html"><a href="premiers-graphiques.html#package-ggplot2"><i class="fa fa-check"></i><b>7.1</b> Package ggplot2</a></li>
-<li class="chapter" data-level="7.2" data-path="premiers-graphiques.html"><a href="premiers-graphiques.html#histogramme"><i class="fa fa-check"></i><b>7.2</b> Histogramme</a></li>
-<li class="chapter" data-level="7.3" data-path="premiers-graphiques.html"><a href="premiers-graphiques.html#nuages-de-points"><i class="fa fa-check"></i><b>7.3</b> Nuages de points</a></li>
-<li class="chapter" data-level="7.4" data-path="premiers-graphiques.html"><a href="premiers-graphiques.html#matrice-de-nuages"><i class="fa fa-check"></i><b>7.4</b> Matrice de nuages</a></li>
-<li class="chapter" data-level="7.5" data-path="premiers-graphiques.html"><a href="premiers-graphiques.html#bonus-faire-un-graphique-dynamique"><i class="fa fa-check"></i><b>7.5</b> Bonus : faire un graphique “dynamique”</a></li>
-<li class="chapter" data-level="7.6" data-path="premiers-graphiques.html"><a href="premiers-graphiques.html#exercices-creer-des-graphiques"><i class="fa fa-check"></i><b>7.6</b> Exercices : créer des graphiques</a></li>
+<li class="chapter" data-level="7.4" data-path="premiers-traitements-statistiques.html"><a href="premiers-traitements-statistiques.html#tableau-de-contingence"><i class="fa fa-check"></i><b>7.4</b> Tableau de contingence</a></li>
+<li class="chapter" data-level="7.5" data-path="premiers-traitements-statistiques.html"><a href="premiers-traitements-statistiques.html#tableau-de-proportions"><i class="fa fa-check"></i><b>7.5</b> Tableau de proportions</a></li>
+<li class="chapter" data-level="7.6" data-path="premiers-traitements-statistiques.html"><a href="premiers-traitements-statistiques.html#exercice-calcul-de-statistiques"><i class="fa fa-check"></i><b>7.6</b> Exercice : calcul de statistiques</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="sauvegarder-son-travail.html"><a href="sauvegarder-son-travail.html"><i class="fa fa-check"></i><b>8</b> Sauvegarder son travail</a><ul>
-<li class="chapter" data-level="8.1" data-path="sauvegarder-son-travail.html"><a href="sauvegarder-son-travail.html#exportation-des-resultats"><i class="fa fa-check"></i><b>8.1</b> Exportation des résultats</a></li>
-<li class="chapter" data-level="8.2" data-path="sauvegarder-son-travail.html"><a href="sauvegarder-son-travail.html#environnement-et-rdata"><i class="fa fa-check"></i><b>8.2</b> Environnement et RData</a></li>
+<li class="chapter" data-level="8" data-path="premiers-graphiques.html"><a href="premiers-graphiques.html"><i class="fa fa-check"></i><b>8</b> Premiers graphiques</a><ul>
+<li class="chapter" data-level="8.1" data-path="premiers-graphiques.html"><a href="premiers-graphiques.html#package-ggplot2"><i class="fa fa-check"></i><b>8.1</b> Package ggplot2</a></li>
+<li class="chapter" data-level="8.2" data-path="premiers-graphiques.html"><a href="premiers-graphiques.html#histogramme"><i class="fa fa-check"></i><b>8.2</b> Histogramme</a></li>
+<li class="chapter" data-level="8.3" data-path="premiers-graphiques.html"><a href="premiers-graphiques.html#nuages-de-points"><i class="fa fa-check"></i><b>8.3</b> Nuages de points</a></li>
+<li class="chapter" data-level="8.4" data-path="premiers-graphiques.html"><a href="premiers-graphiques.html#matrice-de-nuages"><i class="fa fa-check"></i><b>8.4</b> Matrice de nuages</a></li>
+<li class="chapter" data-level="8.5" data-path="premiers-graphiques.html"><a href="premiers-graphiques.html#bonus-faire-un-graphique-dynamique"><i class="fa fa-check"></i><b>8.5</b> Bonus : faire un graphique “dynamique”</a></li>
+<li class="chapter" data-level="8.6" data-path="premiers-graphiques.html"><a href="premiers-graphiques.html#exercices-creer-des-graphiques"><i class="fa fa-check"></i><b>8.6</b> Exercices : créer des graphiques</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><a href="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><i class="fa fa-check"></i><b>9</b> Aller plus loin avec les objets, crochets et la programmation fonctionnelle</a><ul>
-<li class="chapter" data-level="9.1" data-path="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><a href="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html#les-objets-dans-r"><i class="fa fa-check"></i><b>9.1</b> Les objets dans R</a><ul>
-<li class="chapter" data-level="9.1.1" data-path="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><a href="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html#creer-des-vecteurs"><i class="fa fa-check"></i><b>9.1.1</b> Créer des vecteurs</a></li>
-<li class="chapter" data-level="9.1.2" data-path="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><a href="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html#creer-une-matrice"><i class="fa fa-check"></i><b>9.1.2</b> Créer une matrice</a></li>
-<li class="chapter" data-level="9.1.3" data-path="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><a href="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html#visualiser-ces-objets-et-leurs-attributs"><i class="fa fa-check"></i><b>9.1.3</b> Visualiser ces objets et leurs attributs</a></li>
+<li class="chapter" data-level="9" data-path="sauvegarder-son-travail.html"><a href="sauvegarder-son-travail.html"><i class="fa fa-check"></i><b>9</b> Sauvegarder son travail</a><ul>
+<li class="chapter" data-level="9.1" data-path="sauvegarder-son-travail.html"><a href="sauvegarder-son-travail.html#exportation-des-resultats"><i class="fa fa-check"></i><b>9.1</b> Exportation des résultats</a></li>
+<li class="chapter" data-level="9.2" data-path="sauvegarder-son-travail.html"><a href="sauvegarder-son-travail.html#environnement-et-.rdata"><i class="fa fa-check"></i><b>9.2</b> Environnement et <code>.RData</code></a></li>
 </ul></li>
-<li class="chapter" data-level="9.2" data-path="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><a href="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html#selectionner-des-lignes-et-des-colonnes"><i class="fa fa-check"></i><b>9.2</b> Sélectionner des lignes et des colonnes</a></li>
-<li class="chapter" data-level="9.3" data-path="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><a href="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html#creer-une-nouvelle-fonction-en-r"><i class="fa fa-check"></i><b>9.3</b> Créer une nouvelle fonction en R</a></li>
-<li class="chapter" data-level="9.4" data-path="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><a href="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html#les-boucles-conditionnelles"><i class="fa fa-check"></i><b>9.4</b> Les boucles conditionnelles</a></li>
-<li class="chapter" data-level="9.5" data-path="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><a href="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html#les-boucles"><i class="fa fa-check"></i><b>9.5</b> Les boucles</a></li>
-<li class="chapter" data-level="9.6" data-path="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><a href="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html#exercices"><i class="fa fa-check"></i><b>9.6</b> Exercices</a><ul>
-<li class="chapter" data-level="9.6.1" data-path="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><a href="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html#vecteurs-simples"><i class="fa fa-check"></i><b>9.6.1</b> Vecteurs simples</a></li>
-<li class="chapter" data-level="9.6.2" data-path="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><a href="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html#dataframes-et-listes"><i class="fa fa-check"></i><b>9.6.2</b> Dataframes et listes</a></li>
-<li class="chapter" data-level="9.6.3" data-path="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><a href="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html#pour-aller-plus-loin-matrices-et-arrays"><i class="fa fa-check"></i><b>9.6.3</b> Pour aller plus loin : matrices et arrays</a></li>
-<li class="chapter" data-level="9.6.4" data-path="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><a href="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html#inspection-dun-objet-la-regression"><i class="fa fa-check"></i><b>9.6.4</b> Inspection d’un objet : la régression</a></li>
+<li class="chapter" data-level="10" data-path="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><a href="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><i class="fa fa-check"></i><b>10</b> Aller plus loin avec les objets, crochets et la programmation fonctionnelle</a><ul>
+<li class="chapter" data-level="10.1" data-path="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><a href="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html#les-objets-dans-r"><i class="fa fa-check"></i><b>10.1</b> Les objets dans R</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><a href="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html#creer-des-vecteurs"><i class="fa fa-check"></i><b>10.1.1</b> Créer des vecteurs</a></li>
+<li class="chapter" data-level="10.1.2" data-path="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><a href="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html#creer-une-matrice"><i class="fa fa-check"></i><b>10.1.2</b> Créer une matrice</a></li>
+<li class="chapter" data-level="10.1.3" data-path="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><a href="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html#visualiser-ces-objets-et-leurs-attributs"><i class="fa fa-check"></i><b>10.1.3</b> Visualiser ces objets et leurs attributs</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><a href="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html#selectionner-des-lignes-et-des-colonnes"><i class="fa fa-check"></i><b>10.2</b> Sélectionner des lignes et des colonnes</a></li>
+<li class="chapter" data-level="10.3" data-path="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><a href="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html#creer-une-nouvelle-fonction-en-r"><i class="fa fa-check"></i><b>10.3</b> Créer une nouvelle fonction en R</a></li>
+<li class="chapter" data-level="10.4" data-path="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><a href="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html#les-boucles-conditionnelles"><i class="fa fa-check"></i><b>10.4</b> Les boucles conditionnelles</a></li>
+<li class="chapter" data-level="10.5" data-path="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><a href="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html#les-boucles"><i class="fa fa-check"></i><b>10.5</b> Les boucles</a></li>
+<li class="chapter" data-level="10.6" data-path="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><a href="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html#exercices"><i class="fa fa-check"></i><b>10.6</b> Exercices</a><ul>
+<li class="chapter" data-level="10.6.1" data-path="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><a href="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html#vecteurs-simples"><i class="fa fa-check"></i><b>10.6.1</b> Vecteurs simples</a></li>
+<li class="chapter" data-level="10.6.2" data-path="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><a href="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html#dataframes-et-listes"><i class="fa fa-check"></i><b>10.6.2</b> Dataframes et listes</a></li>
+<li class="chapter" data-level="10.6.3" data-path="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><a href="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html#pour-aller-plus-loin-matrices-et-arrays"><i class="fa fa-check"></i><b>10.6.3</b> Pour aller plus loin : matrices et arrays</a></li>
+<li class="chapter" data-level="10.6.4" data-path="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html"><a href="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle.html#inspection-dun-objet-la-regression"><i class="fa fa-check"></i><b>10.6.4</b> Inspection d’un objet : la régression</a></li>
 </ul></li>
 </ul></li>
 <li class="divider"></li>
@@ -211,44 +217,45 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
             <section class="normal" id="section-">
 <div id="aller-plus-loin-avec-les-objets-crochets-et-la-programmation-fonctionnelle" class="section level1">
-<h1><span class="header-section-number">Chapitre 9</span> Aller plus loin avec les objets, crochets et la programmation fonctionnelle</h1>
-<p>Ce qui a été présenté dans ce module reposer sur les fonctions du package <code>tidyverse</code>. Cette approche tend à se généraliser depuis quelques années, mais quand on cherche la réponse à un problème sur Internet, on trouve d’autres façons de programmer en R, qui appellent aux éléments du package <code>base</code> et non du <code>tidyverse</code> <span class="math inline">\(\rightarrow\)</span> Cete partie donne quelques clés de compréhension.</p>
+<h1><span class="header-section-number">Chapitre 10</span> Aller plus loin avec les objets, crochets et la programmation fonctionnelle</h1>
+<p>Ce qui a été présenté dans ce module repose sur les fonctions du package <code>tidyverse</code>. Cette approche tend à se généraliser depuis quelques années, mais quand on cherche la réponse à un problème sur Internet, on trouve d’autres façons de programmer en R, qui font appel aux fonctions du package <code>base</code> et non du <code>tidyverse</code> <span class="math inline">\(\Rightarrow\)</span> Cette partie donne quelques clés de compréhension.</p>
 <div id="les-objets-dans-r" class="section level2">
-<h2><span class="header-section-number">9.1</span> Les objets dans R</h2>
-<p>Rappel : en informatique, un objet est défini par : ses <em>attributs</em> et ses <em>méthodes</em> (fonctions). On prend l’exemple du jeu d’échec : chaque pièce peut-être vue comme un objet :</p>
+<h2><span class="header-section-number">10.1</span> Les objets dans R</h2>
+<p>Rappel : en informatique, un objet est défini par : ses <em>attributs</em> et ses <em>méthodes</em> (fonctions). Dans l’exemple du jeu d’échec, chaque pièce peut être vue comme un objet :</p>
 <ul>
 <li>sa position sur le plateau constitue ses attributs</li>
-<li>sa façon de se déplacer peut-être vue comme une fonction qui ne s’applique qu’à ce type de pièce, donc une méthode</li>
+<li>sa façon de se déplacer peut être vue comme une fonction qui ne s’applique qu’à ce type de pièce, donc une méthode</li>
 </ul>
-<p>R est un langage orienté objet ; ces objets permettent de structurer les données selon leurs caractéristiques <span class="math inline">\(\rightarrow\)</span> on retrouve les données dans les attributs. Les méthodes sont en général transparentes pour l’utilisateur (cf utilisation des fonctions <code>summary</code>, <code>plot</code>…). Les objets les plus courants sont les suivants :</p>
+<p>R est un langage orienté objet ; ces objets permettent de structurer les données selon leurs caractéristiques <span class="math inline">\(\Rightarrow\)</span> on retrouve les données dans les attributs. Les méthodes sont en général transparentes pour l’utilisateur (cf. utilisation des fonctions <code>summary</code>, <code>plot</code>…). Les objets les plus courants sont les suivants :</p>
 <ul>
 <li><strong>Vecteurs</strong> : suite unidimensionnelle de <strong>valeurs</strong> ayant le même type.</li>
-<li><strong>Facteurs</strong> : vecteur qui prend un nombre limité de modalités (exemple : sexe). Il est défini par les niveaux (<em>levels</em>) et les libellés associés (<em>labels</em>)</li>
-<li><strong>Matrice</strong> et <strong>arrays</strong> : suites multidimensionnelles de <strong>valeurs</strong> (matrices=dimension 2 ; array=dimension n)</li>
-<li><p><strong>Liste</strong> : ensemble d’<strong>objets</strong> différents. On peut stocker un vecteur alphanumérique avec matrice numérique dans une liste</p></li>
-<li><strong>Tableaux</strong> (data.frame) : Objet qui ressemble le plus aux tables Excel, SAS ou SPSS… : description d’individus statistiques (observations, en ligne) par des caractéristiques (variables, en colonnes)</li>
-<li><strong>Fonctions</strong> : Objets particuliers qui donnent un <em>résultat</em> à partir de paramètres en entrée. Cela sera au programme d’un autre module de formation.</li>
+<li><strong>Facteurs</strong> : vecteur qui prend un nombre limité de modalités (exemple : sexe). Il est défini par les niveaux (<code>levels</code>) et les libellés associés (<code>labels</code>).</li>
+<li><strong>Matrice</strong> et <strong>arrays</strong> : suites multidimensionnelles de <strong>valeurs</strong> (matrices=dimension 2 ; array=dimension n).</li>
+<li><strong>Liste</strong> : ensemble d’<strong>objets</strong> différents. On peut stocker un vecteur alphanumérique + une matrice numérique dans une liste.</li>
+<li><strong>Tableaux</strong> (<code>data.frame</code>) : Objet qui ressemble le plus aux tables Excel, SAS ou SPSS… : description d’individus statistiques (observations, en ligne) par des caractéristiques (variables, en colonnes).</li>
+<li><strong>Fonctions</strong> : Objets particuliers qui donnent un <em>résultat</em> à partir de paramètres en entrée.</li>
 <li><strong>Autres objets</strong> : Il existe un très grand nombre d’objets <em>ad hoc</em> dans R. Par exemple
 <ul>
 <li><em>ts</em> (time serie) pour les séries temporelles,</li>
 <li><em>lm</em> (linear model) qui contient tous les résultats d’une régression linéraire…</li>
+<li>des graphiques</li>
 <li>On peut même en définir de nouveaux soi-même !</li>
 </ul></li>
 </ul>
-<p>On utilise <code>&lt;-</code> ou <code>=</code> pour stocker un objet. La fonction <code>c</code> permet de lister simplement les valeurs que l’on veut stocker dans l’objet ; la fonction <code>seq</code> génére une suite incrémentée. Il existe aussi la fonction <code>rep</code> qui réplique n fois la même valeur.</p>
+<p>La fonction <code>c</code> permet de lister simplement les valeurs que l’on veut stocker dans l’objet ; la fonction <code>seq</code> génére une suite incrémentée. Il existe aussi la fonction <code>rep</code> qui réplique n fois la même valeur.</p>
 <div id="creer-des-vecteurs" class="section level3">
-<h3><span class="header-section-number">9.1.1</span> Créer des vecteurs</h3>
+<h3><span class="header-section-number">10.1.1</span> Créer des vecteurs</h3>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">v1 &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="dv">1</span> <span class="op">:</span><span class="st"> </span><span class="dv">10</span>)
 v2 &lt;-<span class="st"> </span><span class="kw">c</span> (<span class="st">&quot;lundi&quot;</span>, <span class="st">&quot;mardi&quot;</span>, <span class="st">&quot;mercredi&quot;</span>, <span class="st">&quot;jeudi&quot;</span>,
         <span class="st">&quot;vendredi&quot;</span>, <span class="st">&quot;samedi&quot;</span>, <span class="st">&quot;dimanche&quot;</span>)</code></pre></div>
 </div>
 <div id="creer-une-matrice" class="section level3">
-<h3><span class="header-section-number">9.1.2</span> Créer une matrice</h3>
+<h3><span class="header-section-number">10.1.2</span> Créer une matrice</h3>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">m &lt;-<span class="st"> </span><span class="kw">matrix</span> (v1, <span class="dt">nrow =</span> <span class="dv">10</span>, <span class="dt">ncol =</span> <span class="dv">7</span>)
 l &lt;-<span class="st"> </span><span class="kw">list</span> (v1, v2, m)</code></pre></div>
 </div>
 <div id="visualiser-ces-objets-et-leurs-attributs" class="section level3">
-<h3><span class="header-section-number">9.1.3</span> Visualiser ces objets et leurs attributs</h3>
+<h3><span class="header-section-number">10.1.3</span> Visualiser ces objets et leurs attributs</h3>
 <p>Quelques fonctions simples : <code>print</code>, <code>View</code>, <code>names</code>, <code>colnames</code>, <code>rownames</code>, <code>typeof</code>, <code>str</code>, <code>dim</code></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">v1</code></pre></div>
 <pre><code>##  [1]  1  2  3  4  5  6  7  8  9 10</code></pre>
@@ -267,10 +274,10 @@ l &lt;-<span class="st"> </span><span class="kw">list</span> (v1, v2, m)</code><
 </div>
 </div>
 <div id="selectionner-des-lignes-et-des-colonnes" class="section level2">
-<h2><span class="header-section-number">9.2</span> Sélectionner des lignes et des colonnes</h2>
+<h2><span class="header-section-number">10.2</span> Sélectionner des lignes et des colonnes</h2>
 <p>Il est aussi possible d’accéder aux éléments d’un dataframe à partir du numéro de ligne et de colonne, grâce aux crochets :</p>
 <center>
-<img src="Figures/DF2.png" />
+<img src="images/DF2.png" />
 </center>
 <ul>
 <li><code>base[1,3]</code> <span class="math inline">\(\rightarrow\)</span> <span style="color:red">valeur de la première ligne et de la troisième colonne </span></li>
@@ -281,7 +288,7 @@ l &lt;-<span class="st"> </span><span class="kw">list</span> (v1, v2, m)</code><
 </ul>
 </div>
 <div id="creer-une-nouvelle-fonction-en-r" class="section level2">
-<h2><span class="header-section-number">9.3</span> Créer une nouvelle fonction en R</h2>
+<h2><span class="header-section-number">10.3</span> Créer une nouvelle fonction en R</h2>
 <p>La fonction est un objet comme les autres, qu’on crée avec l’opérateur d’affectation. Elle est définie par des paramètres et elle se termine par la fonction <code>return()</code>. On reprend l’exemple du calcul de l’IMC</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">calcul_IMC &lt;-<span class="st"> </span><span class="cf">function</span> (poids, taille)
 {
@@ -289,13 +296,13 @@ l &lt;-<span class="st"> </span><span class="kw">list</span> (v1, v2, m)</code><
   imc &lt;-<span class="st"> </span>poids <span class="op">/</span><span class="st"> </span>taille <span class="op">^</span><span class="st"> </span><span class="dv">2</span>
   <span class="kw">return</span> (imc)
 }
-<span class="kw">calcul_IMC</span> (<span class="dt">poids=</span><span class="dv">80</span>,<span class="dt">taille=</span><span class="fl">1.89</span>)</code></pre></div>
+<span class="kw">calcul_IMC</span> (<span class="dt">poids =</span> <span class="dv">80</span>, <span class="dt">taille =</span> <span class="fl">1.89</span>)</code></pre></div>
 <pre><code>## [1] 22.39579</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">calcul_IMC</span> (<span class="dt">poids=</span><span class="dv">60</span>,<span class="dt">taille=</span><span class="fl">1.55</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">calcul_IMC</span> (<span class="dt">poids =</span> <span class="dv">60</span>, <span class="dt">taille =</span> <span class="fl">1.55</span>)</code></pre></div>
 <pre><code>## [1] 24.97399</code></pre>
 </div>
 <div id="les-boucles-conditionnelles" class="section level2">
-<h2><span class="header-section-number">9.4</span> Les boucles conditionnelles</h2>
+<h2><span class="header-section-number">10.4</span> Les boucles conditionnelles</h2>
 <p>Les commandes <code>if</code> et <code>else</code> sont bien entendues utilisables. Le “then” n’existe pas : il est implicite après les accolades.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">diag_IMC &lt;-<span class="st"> </span><span class="cf">function</span>(poids,taille)
 {
@@ -313,7 +320,7 @@ l &lt;-<span class="st"> </span><span class="kw">list</span> (v1, v2, m)</code><
 <pre><code>## [1] &quot;surpoids&quot;</code></pre>
 </div>
 <div id="les-boucles" class="section level2">
-<h2><span class="header-section-number">9.5</span> Les boucles</h2>
+<h2><span class="header-section-number">10.5</span> Les boucles</h2>
 <p>On peut utiliser les boucles classiques : <code>repeat</code>, <code>while</code>, <code>for</code> :</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="cf">for</span> (pp <span class="cf">in</span> <span class="kw">seq</span>(<span class="dt">from =</span> <span class="dv">50</span>, <span class="dt">to =</span> <span class="dv">100</span>, <span class="dt">by =</span> <span class="dv">5</span>))
 {
@@ -333,9 +340,9 @@ l &lt;-<span class="st"> </span><span class="kw">list</span> (v1, v2, m)</code><
 ## [1] &quot;Taille = 1,70m, poids = 100 Diagnotic : surpoids&quot;</code></pre>
 </div>
 <div id="exercices" class="section level2">
-<h2><span class="header-section-number">9.6</span> Exercices</h2>
+<h2><span class="header-section-number">10.6</span> Exercices</h2>
 <div id="vecteurs-simples" class="section level3">
-<h3><span class="header-section-number">9.6.1</span> Vecteurs simples</h3>
+<h3><span class="header-section-number">10.6.1</span> Vecteurs simples</h3>
 <ul>
 <li>Créer trois vecteurs : un numérique, un caractère et un facteur. Vous pouvez vous aider des fonctions <code>c()</code>, <code>rnorm()</code> (génération d’une variable aléatoire selon une loi normale), <code>seq()</code> ou <code>rep()</code></li>
 <li>Regrouper ces variables dans un dataframe, puis dans une liste. Dans les deux configurations, afficher la variable contenant les tailles (vtaille). Pour la liste, utiliser les [] et [[]].</li>
@@ -351,7 +358,7 @@ x &lt;-<span class="st"> </span><span class="kw">rnorm</span> (<span class="dt">
 <span class="co"># création de vecteurs avec la fonction c() = combine</span>
 v1 &lt;-<span class="st"> </span><span class="kw">c</span>( <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">12</span>, <span class="dv">15</span>, <span class="dv">32</span>, <span class="dv">6</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">9</span>)
 
-<span class="co"># avec la fonction seq() = sequence, g?n?ralisation de la syntaxe ci-dessus</span>
+<span class="co"># avec la fonction seq() = sequence, généralisation de la syntaxe ci-dessus</span>
 v2 &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="dt">from =</span> <span class="dv">1</span> , <span class="dt">to =</span> <span class="dv">15</span> , <span class="dt">by =</span> <span class="fl">1.5</span>)
 
 <span class="co"># syntaxe équivalente mais préférable car plus lisible :</span>
@@ -362,7 +369,7 @@ v3 &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">:</sp
 <span class="co"># avec la fonction rep() = répétition</span>
 v4 &lt;-<span class="st"> </span><span class="kw">rep</span> (<span class="dt">x =</span> <span class="dv">4</span>, <span class="dt">times =</span> <span class="dv">10</span>)
 
-<span class="co"># ces commandes peuvent être combinées. Pratique pour cr?er des variables &quot;facteur&quot;</span>
+<span class="co"># ces commandes peuvent être combinées. Pratique pour créer des variables &quot;facteur&quot;</span>
 v5 &lt;-<span class="st"> </span><span class="kw">rep</span> (<span class="dt">x =</span> <span class="kw">c</span>(<span class="dv">3</span>, <span class="dv">4</span>, <span class="fl">1.2</span>, <span class="dv">8</span>, <span class="dv">9</span>), <span class="dt">times =</span> <span class="dv">2</span>)
 v6 &lt;-<span class="st"> </span><span class="kw">rep</span> (<span class="dt">x =</span> <span class="dv">1</span><span class="op">:</span><span class="dv">5</span>, <span class="dt">times =</span> <span class="dv">2</span>)
 
@@ -379,7 +386,7 @@ toutes_taille &lt;-<span class="st"> </span><span class="kw">as.factor</span> (t
 <pre><code>## [1] &quot;L&quot;  &quot;S&quot;  &quot;XL&quot; &quot;XS&quot;</code></pre>
 </div>
 <div id="dataframes-et-listes" class="section level3">
-<h3><span class="header-section-number">9.6.2</span> Dataframes et listes</h3>
+<h3><span class="header-section-number">10.6.2</span> Dataframes et listes</h3>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">dataf &lt;-<span class="st"> </span><span class="kw">data.frame</span> (vtaille, v1, v2, v3, v4, v5, v6)
 liste &lt;-<span class="st"> </span><span class="kw">list</span> (vtaille, v1, v2, v3, v4, v5, v6)
 <span class="kw">names</span>(liste) &lt;-<span class="st"> </span><span class="kw">c</span> (<span class="st">&quot;vtaille&quot;</span>, <span class="st">&quot;v1&quot;</span>, <span class="st">&quot;v2&quot;</span>, <span class="st">&quot;v3&quot;</span>, <span class="st">&quot;v4&quot;</span>, <span class="st">&quot;v5&quot;</span>, <span class="st">&quot;v6&quot;</span>)
@@ -393,120 +400,120 @@ dataf<span class="op">$</span>vtaille</code></pre></div>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">rm</span> (dataf, vtaille, v1, v2, v2b, v3, v4, v5, v6)</code></pre></div>
 </div>
 <div id="pour-aller-plus-loin-matrices-et-arrays" class="section level3">
-<h3><span class="header-section-number">9.6.3</span> Pour aller plus loin : matrices et arrays</h3>
+<h3><span class="header-section-number">10.6.3</span> Pour aller plus loin : matrices et arrays</h3>
 <p>Les matrices et les arrays permettent des calculs rapides et efficaces, et peuvent être très pratiques et optimisent le stockage des données. Ils demandent cependant plus de réflexion en amont quant à leur utilisation, mais . On accède aux éléments avec les [].</p>
 <ul>
 <li>Créer une matrice à 10 lignes et 10 colonnes remplie avec un tirage aléatoire selon une loi normale centrée réduit.</li>
 <li>Créer un hypercube avec la fonction <code>array()</code> avec 10 lignes, 5 colonnes et de profondeur 3, toujours avec un tirage aléatoire selon une loi normale</li>
 </ul>
-<p>Un hypercube de trois dimensions peut être représenté comme suit : <img src="Figures/grille.jpg" style="width:50.0%" /></p>
+<p>Un hypercube de trois dimensions peut être représenté comme suit : <img src="images/grille.jpg" style="width:50.0%" /></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">mat &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="kw">rnorm</span>(<span class="dv">50</span>), <span class="dt">ncol =</span> <span class="dv">5</span>, <span class="dt">nrow =</span> <span class="dv">10</span>)
 arr &lt;-<span class="st"> </span><span class="kw">array</span>(<span class="kw">rnorm</span>(<span class="dv">150</span>),<span class="dt">dim =</span> <span class="kw">c</span>(<span class="dv">10</span>,<span class="dv">5</span>,<span class="dv">3</span>))
 mat</code></pre></div>
-<pre><code>##             [,1]       [,2]       [,3]        [,4]       [,5]
-##  [1,]  0.3610756  2.5675822  2.4221621  1.46129270  0.2130249
-##  [2,] -0.6101857 -2.0954367 -1.2714453 -1.91147076 -0.7014542
-##  [3,]  2.2812433  0.2751296 -0.3144474 -0.60976341  0.6652407
-##  [4,]  0.1279175  0.1486099  0.3999455  0.08459220 -0.4918059
-##  [5,] -0.4580187  2.3148112 -2.4088520  0.46281902 -0.1758566
-##  [6,] -0.2175542  0.7539436 -1.2749438 -0.08036219  0.3589201
-##  [7,] -1.0732313 -0.6855603 -1.1749672  1.41897234 -0.3117300
-##  [8,]  0.5098228  0.5323211  0.4900066  2.28524824 -2.1019300
-##  [9,]  1.4981268  0.5548422 -0.6673220  1.44838005  0.7207433
-## [10,]  1.7691681  0.4959375 -1.2514192  1.65054737  1.7521203</code></pre>
+<pre><code>##              [,1]       [,2]        [,3]        [,4]        [,5]
+##  [1,] -0.68493800 -0.3314770 -0.91533064  0.23247056 -0.47622259
+##  [2,] -0.67820879  1.0300161  0.99697558 -1.22107088  1.18670668
+##  [3,]  1.89314225 -1.1536359  0.21703338 -0.10000272 -0.20649698
+##  [4,]  0.50330003  0.2108075 -0.06588234  0.53184325  0.97051945
+##  [5,]  0.07280369  1.3985436 -0.37058409  1.24185200  1.00156167
+##  [6,] -2.15010387  1.5134278 -0.31171257 -0.60720471 -0.64865598
+##  [7,] -0.18386150 -1.1297428 -0.26825577  0.29541509  0.03114267
+##  [8,]  0.95708241  1.3464300 -0.78463017  0.73269832  0.49682302
+##  [9,] -0.19203915  1.1272268 -0.10027205  1.61094664  1.31785794
+## [10,]  1.81936970  0.5082678  1.64983724 -0.08671501  0.29674756</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">arr</code></pre></div>
 <pre><code>## , , 1
 ## 
-##              [,1]       [,2]       [,3]       [,4]        [,5]
-##  [1,]  0.47298698 -0.6418764  0.8027490 -0.5740054  0.08710635
-##  [2,] -0.23420833 -0.3391176 -0.7395008 -0.7252986 -0.92695756
-##  [3,]  0.06418473 -1.8164386  1.1183032  0.5245856 -0.09148799
-##  [4,] -0.36275935 -0.8586354  0.7157856  0.5146799  1.06563947
-##  [5,]  0.32616755  1.5006077 -1.1083954  0.7779787 -1.42238665
-##  [6,]  0.63363855 -2.1268687  1.7698992  0.5137530  2.18418400
-##  [7,]  1.08559215  0.5212865 -1.2967818  0.3934492  0.40074290
-##  [8,] -0.11862777 -0.2644721  1.0921697  1.2629752 -0.53210574
-##  [9,] -1.21358177 -0.9405849 -1.2110460 -1.2590402  2.01583386
-## [10,]  0.22048319  0.8243695  1.1656064  0.3353269 -0.24045923
+##             [,1]       [,2]        [,3]       [,4]       [,5]
+##  [1,]  0.6480522  0.2876557 -1.36882212  0.7086237 -1.5607903
+##  [2,] -0.8968573 -0.4766395  0.22362410 -2.0584134 -0.9251396
+##  [3,] -0.1973113 -0.2314617  0.84940054 -1.3590186 -2.4389110
+##  [4,]  0.1127159 -0.4705643 -0.95484074 -0.3474656  1.9055604
+##  [5,]  0.2810605  0.3307132  1.06892511 -0.6810601 -0.4332195
+##  [6,] -0.2461152  1.6745599 -0.76533357 -0.8434536 -1.0110255
+##  [7,] -1.2553787  0.2370073 -1.08502404  0.3086622  0.2700255
+##  [8,] -0.4583310  1.9562366 -0.01745874  0.3473191  1.4062079
+##  [9,] -0.1964143  1.4848400  1.30653942  1.5566407  1.1321518
+## [10,]  0.2407209 -0.4021123  1.01571892 -0.6393971 -1.4438230
 ## 
 ## , , 2
 ## 
-##              [,1]       [,2]        [,3]        [,4]        [,5]
-##  [1,]  0.46684665  0.4882336 -0.10107853  0.54948830  0.44311887
-##  [2,] -0.14877114 -0.5543343  1.14070150 -0.86877078  2.16189833
-##  [3,]  1.43418016  2.1114262  0.40596077 -0.06848545 -0.21968101
-##  [4,]  0.07205511  1.0507040 -1.55407284  1.46847823  1.57746691
-##  [5,]  1.23092745 -0.7069902 -1.08409219 -0.88063519 -0.54603901
-##  [6,] -0.60468445  1.0647776  2.78780004 -1.59751971  1.22077183
-##  [7,] -0.22445757 -1.9931186 -0.29934468  0.78815164  0.68370612
-##  [8,]  1.10261760  0.4519822 -1.15367779  0.93253768 -0.47880508
-##  [9,] -0.69675138 -0.3036033  0.08063194  0.67951282 -0.03191382
-## [10,]  1.01958926  0.7981853  0.41065762  0.47009540 -0.28868209
+##             [,1]       [,2]        [,3]       [,4]       [,5]
+##  [1,]  0.8279404  0.7175146 -0.66287595 -0.8175620  0.9180991
+##  [2,]  1.5971553 -0.2015095  0.52076283 -1.6827987 -0.3075335
+##  [3,] -0.0658732  0.2240584 -0.76156348  0.5874301 -0.4073195
+##  [4,]  0.3216030  0.5519203  0.60149517 -0.4014834 -0.4399326
+##  [5,] -0.0583456  0.2769523 -0.09266041  0.5204357 -0.8109080
+##  [6,] -0.2389302  0.8503584  0.89097008  0.9694475 -0.7681425
+##  [7,] -1.4155777  0.5815041  1.40259002  0.6475972 -1.4010874
+##  [8,] -0.2096668 -1.4028309  0.66463129  0.4052988 -1.0191170
+##  [9,] -0.1606451 -2.0134796  0.09017294 -0.9986682 -2.2175283
+## [10,]  0.6096606 -0.6076346  0.60785440 -0.3026600  0.8825602
 ## 
 ## , , 3
 ## 
-##             [,1]        [,2]        [,3]        [,4]        [,5]
-##  [1,] -1.4880759  0.24416225  0.60637290  1.23345439  1.06527223
-##  [2,]  0.5828252  0.03390540 -1.33532291 -0.63877738 -0.78981553
-##  [3,] -0.3586157  0.03100845  0.69679269  0.86064434  1.74407117
-##  [4,] -0.2624262 -1.79303812  0.01484453 -0.66486893 -0.36579424
-##  [5,] -0.3231134 -0.04206434  1.23867674 -1.11837202 -0.36118153
-##  [6,]  0.2551275  0.12112221 -0.70194404 -1.29791782  0.07013609
-##  [7,] -0.1426661 -1.57097082 -0.31911325  0.55845664 -0.38006319
-##  [8,] -1.8721762  0.87420480  0.84498799 -0.68207785  0.64160310
-##  [9,] -2.3202807 -0.51995390 -0.74742692  0.88984651 -1.64068649
-## [10,]  2.1697890 -0.34571632 -1.06146547  0.01147565 -0.13321144</code></pre>
+##              [,1]        [,2]       [,3]       [,4]       [,5]
+##  [1,] -0.42194766  1.45829879 -1.7472051  0.5156990  0.6105364
+##  [2,]  0.88830153  0.04628931 -0.8570173 -1.6314301  1.5313047
+##  [3,]  0.05824859  0.63802390 -0.5648198  1.0947927 -0.5471933
+##  [4,] -1.87113294 -0.67698090 -0.7220651 -0.2688367  1.1300641
+##  [5,]  0.21900761  0.31457711  0.7714861 -1.4071037  0.9076674
+##  [6,] -1.72964306  1.64144717 -0.3091499  0.7381537 -1.7195156
+##  [7,]  0.82839946  0.35375369 -1.3769677 -1.8236617  0.5065924
+##  [8,]  0.46952220  0.93724067 -0.1459426  1.6532392 -1.2120104
+##  [9,] -0.38191649  0.64132735 -1.1208490 -0.1809339 -1.2982689
+## [10,] -0.67920816 -1.64411471  0.7570896  1.6015246 -2.0590886</code></pre>
 <p><em>Pourquoi s’embêter avec ça ?</em> Parce qu’on peut appliquer des fonctions facilement sur les lignes, colonnes et autres dimensions grâce à la fonction <code>apply()</code>. Exemple : résultats de validations croisées par bloc, simulations de loi selon différents paramètres. Et on calcule facilement des statistiques “marginales”.</p>
 <p>Par, exemple, sur une matrice, on peut calculer des statistiques par lignes :</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">apply</span>(mat, <span class="dt">MARGIN =</span> <span class="dv">1</span>, <span class="dt">FUN=</span>mean)</code></pre></div>
-<pre><code>##  [1]  1.40502750 -1.31799854  0.45948057  0.05385187 -0.05301942
-##  [6] -0.09199931 -0.36530330  0.34309374  0.71095407  0.88327081</code></pre>
+<pre><code>##  [1] -0.4350995  0.2628837  0.1300080  0.4301176  0.6688354 -0.4408499
+##  [7] -0.2510605  0.5496807  0.7527440  0.8375014</code></pre>
 <p>Ou par colonnes :</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">apply</span>(mat, <span class="dt">MARGIN =</span> <span class="dv">2</span>, <span class="dt">FUN=</span>mean)</code></pre></div>
-<pre><code>## [1]  0.418836415  0.486218037 -0.505128262  0.621025556 -0.007272751</code></pre>
+<pre><code>## [1] 0.135654677 0.451986387 0.004717857 0.263023253 0.396998343</code></pre>
 <p>Sur notre hypercube de type <code>array</code>, on peut aussi calculer des stats sur ses différentes dimensions :</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">apply</span> (arr, <span class="dt">MARGIN =</span> <span class="dv">3</span>, <span class="dt">FUN=</span>mean)</code></pre></div>
-<pre><code>## [1]  0.06690897  0.25373988 -0.16976714</code></pre>
+<pre><code>## [1] -0.06822841 -0.06396642 -0.12168832</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">apply</span> (arr, <span class="dt">MARGIN =</span> <span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">3</span>), <span class="dt">FUN =</span> mean)</code></pre></div>
 <pre><code>##             [,1]       [,2]        [,3]
-## [1,]  0.08738759 0.36515517 -0.37596124
-## [2,] -0.41417300 0.24072625 -0.29673404
-## [3,]  0.23087890 0.06334858 -0.07635977
-## [4,]  0.17644042 0.14728529 -0.08481365
-## [5,]  0.25401094 0.45218411 -0.01496698</code></pre>
-<p><strong>Le coin du capitaine [ ]</strong> <img src="../Figures/CapHookImage.png" style="width:10.0%" /></p>
+## [1,] -0.19678581  0.1207321 -0.26203689
+## [2,]  0.43902347 -0.1023146  0.37098624
+## [3,]  0.02727289  0.3261377 -0.53154407
+## [4,] -0.30075627 -0.1072963  0.02914431
+## [5,] -0.30989633 -0.5570909 -0.21499117</code></pre>
+<p><strong>Le coin du capitaine [ ]</strong><img src="images/CapHookImage.png" style="width:10.0%" /></p>
 <p>Le crochet, c’est comme le capitaine du même nom : personne ne l’aime, mais sans lui, pas de Peter Pan, pas de Neverland ! Moralité, on s’en sert beacoup pour pimenter les codes ! On peut utiliser les crochets pour accéder aux éléments des matrices/arrays et dataframe/listes.</p>
 <ul>
 <li>Matrices et arrays</li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">mat [<span class="dv">1</span>,<span class="dv">1</span>]</code></pre></div>
-<pre><code>## [1] 0.3610756</code></pre>
+<pre><code>## [1] -0.684938</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">mat [<span class="dv">1</span>,]</code></pre></div>
-<pre><code>## [1] 0.3610756 2.5675822 2.4221621 1.4612927 0.2130249</code></pre>
+<pre><code>## [1] -0.6849380 -0.3314770 -0.9153306  0.2324706 -0.4762226</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">mat [,<span class="dv">1</span>]</code></pre></div>
-<pre><code>##  [1]  0.3610756 -0.6101857  2.2812433  0.1279175 -0.4580187 -0.2175542
-##  [7] -1.0732313  0.5098228  1.4981268  1.7691681</code></pre>
+<pre><code>##  [1] -0.68493800 -0.67820879  1.89314225  0.50330003  0.07280369
+##  [6] -2.15010387 -0.18386150  0.95708241 -0.19203915  1.81936970</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">arr [<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>]</code></pre></div>
-<pre><code>## [1] 0.472987</code></pre>
+<pre><code>## [1] 0.6480522</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">arr [<span class="dv">1</span>,,]</code></pre></div>
-<pre><code>##             [,1]       [,2]       [,3]
-## [1,]  0.47298698  0.4668467 -1.4880759
-## [2,] -0.64187644  0.4882336  0.2441622
-## [3,]  0.80274903 -0.1010785  0.6063729
-## [4,] -0.57400544  0.5494883  1.2334544
-## [5,]  0.08710635  0.4431189  1.0652722</code></pre>
+<pre><code>##            [,1]       [,2]       [,3]
+## [1,]  0.6480522  0.8279404 -0.4219477
+## [2,]  0.2876557  0.7175146  1.4582988
+## [3,] -1.3688221 -0.6628760 -1.7472051
+## [4,]  0.7086237 -0.8175620  0.5156990
+## [5,] -1.5607903  0.9180991  0.6105364</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">arr [,,<span class="dv">1</span>]</code></pre></div>
-<pre><code>##              [,1]       [,2]       [,3]       [,4]        [,5]
-##  [1,]  0.47298698 -0.6418764  0.8027490 -0.5740054  0.08710635
-##  [2,] -0.23420833 -0.3391176 -0.7395008 -0.7252986 -0.92695756
-##  [3,]  0.06418473 -1.8164386  1.1183032  0.5245856 -0.09148799
-##  [4,] -0.36275935 -0.8586354  0.7157856  0.5146799  1.06563947
-##  [5,]  0.32616755  1.5006077 -1.1083954  0.7779787 -1.42238665
-##  [6,]  0.63363855 -2.1268687  1.7698992  0.5137530  2.18418400
-##  [7,]  1.08559215  0.5212865 -1.2967818  0.3934492  0.40074290
-##  [8,] -0.11862777 -0.2644721  1.0921697  1.2629752 -0.53210574
-##  [9,] -1.21358177 -0.9405849 -1.2110460 -1.2590402  2.01583386
-## [10,]  0.22048319  0.8243695  1.1656064  0.3353269 -0.24045923</code></pre>
+<pre><code>##             [,1]       [,2]        [,3]       [,4]       [,5]
+##  [1,]  0.6480522  0.2876557 -1.36882212  0.7086237 -1.5607903
+##  [2,] -0.8968573 -0.4766395  0.22362410 -2.0584134 -0.9251396
+##  [3,] -0.1973113 -0.2314617  0.84940054 -1.3590186 -2.4389110
+##  [4,]  0.1127159 -0.4705643 -0.95484074 -0.3474656  1.9055604
+##  [5,]  0.2810605  0.3307132  1.06892511 -0.6810601 -0.4332195
+##  [6,] -0.2461152  1.6745599 -0.76533357 -0.8434536 -1.0110255
+##  [7,] -1.2553787  0.2370073 -1.08502404  0.3086622  0.2700255
+##  [8,] -0.4583310  1.9562366 -0.01745874  0.3473191  1.4062079
+##  [9,] -0.1964143  1.4848400  1.30653942  1.5566407  1.1321518
+## [10,]  0.2407209 -0.4021123  1.01571892 -0.6393971 -1.4438230</code></pre>
 <ul>
 <li>dataframes et listes :</li>
 </ul>
@@ -516,10 +523,22 @@ mat</code></pre></div>
 ##  $ vtaille: Factor w/ 2 levels &quot;L&quot;,&quot;S&quot;: 2 1 2 1 2 1 2 1 2 1</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">str</span> (liste [[<span class="dv">1</span>]])</code></pre></div>
 <pre><code>##  Factor w/ 2 levels &quot;L&quot;,&quot;S&quot;: 2 1 2 1 2 1 2 1 2 1</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">liste[<span class="st">&quot;v6&quot;</span>]</code></pre></div>
+<pre><code>## $v6
+##  [1] 1 2 3 4 5 1 2 3 4 5</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">liste[<span class="kw">c</span>(<span class="st">&quot;v6&quot;</span>, <span class="st">&quot;v5&quot;</span>)]</code></pre></div>
+<pre><code>## $v6
+##  [1] 1 2 3 4 5 1 2 3 4 5
+## 
+## $v5
+##  [1] 3.0 4.0 1.2 8.0 9.0 3.0 4.0 1.2 8.0 9.0</code></pre>
+<blockquote>
+<p>Dans la syntaxe <code>tidyverse</code>, on ne met pas (obligatoirement) de guillemets pour les noms de variable, alors qu’on le fait pour la version [ ].</p>
+</blockquote>
 </div>
 <div id="inspection-dun-objet-la-regression" class="section level3">
-<h3><span class="header-section-number">9.6.4</span> Inspection d’un objet : la régression</h3>
-<p><img src="Débuter_avec_R_et_Rstudio_files/figure-html/unnamed-chunk-80-1.png" width="576" /></p>
+<h3><span class="header-section-number">10.6.4</span> Inspection d’un objet : la régression</h3>
+<p><img src="DEBUTER_AVEC_R_ET_RSTUDIO_files/figure-html/unnamed-chunk-80-1.png" width="576" /></p>
 <p>La régression linéaire consiste à exprimer une variable Y en fonction d’une variable X dans une fonction linéaire. C’est à dire qu’on cherche a et b tels que : <span class="math display">\[ Y = a \cdot X + b + \epsilon\]</span> où <span class="math inline">\(\epsilon\)</span> est le résidu de la régression. On utilise dans cet exemple la table des iris de Fisher, existant dans R base qu’il suffit d’appeler avec <code>data(iris)</code> (il existe d’autres dataframe inclus dans les packages et qui sont utilisés en exemple dans l’aide).</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">data</span> (<span class="st">&quot;iris&quot;</span>)
 <span class="kw">str</span> (iris)</code></pre></div>
@@ -618,7 +637,7 @@ mat</code></pre></div>
 ## Multiple R-squared:   0.76,  Adjusted R-squared:  0.7583 
 ## F-statistic: 468.6 on 1 and 148 DF,  p-value: &lt; 2.2e-16</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span> (reg)</code></pre></div>
-<p><img src="Débuter_avec_R_et_Rstudio_files/figure-html/unnamed-chunk-83-1.png" width="576" /><img src="Débuter_avec_R_et_Rstudio_files/figure-html/unnamed-chunk-83-2.png" width="576" /><img src="Débuter_avec_R_et_Rstudio_files/figure-html/unnamed-chunk-83-3.png" width="576" /><img src="Débuter_avec_R_et_Rstudio_files/figure-html/unnamed-chunk-83-4.png" width="576" /></p>
+<p><img src="DEBUTER_AVEC_R_ET_RSTUDIO_files/figure-html/unnamed-chunk-83-1.png" width="576" /><img src="DEBUTER_AVEC_R_ET_RSTUDIO_files/figure-html/unnamed-chunk-83-2.png" width="576" /><img src="DEBUTER_AVEC_R_ET_RSTUDIO_files/figure-html/unnamed-chunk-83-3.png" width="576" /><img src="DEBUTER_AVEC_R_ET_RSTUDIO_files/figure-html/unnamed-chunk-83-4.png" width="576" /></p>
 <p>Les <strong>méthodes</strong> summary, print et plot sont implémentées pour tous les objets en R, et on peut les utiliser pour avoir un premier aperçu de ce que l’on obtient avec la fonction.</p>
 
 </div>
